@@ -43,6 +43,9 @@ export function Navbar() {
             </ButtonLink> :
 
           <>
+              <ButtonLink to="/contact" variant="ghost" size="sm">
+                Contact us
+              </ButtonLink>
               <ButtonLink to="/sign-in" variant="ghost" size="sm">
                 Sign in
               </ButtonLink>
@@ -84,15 +87,23 @@ export function Navbar() {
             </ul>
             <div className="mt-4 grid grid-cols-2 gap-3">
               {user ?
-            <ButtonLink to="/dashboard" className="col-span-2">
-                  My learning space
-                </ButtonLink> :
+            <>
+                  <ButtonLink to="/dashboard">
+                    My learning space
+                  </ButtonLink>
+                  <ButtonLink to="/contact" variant="secondary">
+                    Contact us
+                  </ButtonLink>
+                </> :
 
             <>
+                  <ButtonLink to="/contact" variant="secondary">
+                    Contact us
+                  </ButtonLink>
                   <ButtonLink to="/sign-in" variant="secondary">
                     Sign in
                   </ButtonLink>
-                  <ButtonLink to="/sign-up" glow>Get started</ButtonLink>
+                  <ButtonLink to="/sign-up" glow className="col-span-2">Get started</ButtonLink>
                 </>
             }
             </div>

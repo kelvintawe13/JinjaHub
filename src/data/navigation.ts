@@ -1,10 +1,10 @@
 import type { NavItem } from '../types/content';
 
 export const mainNav: NavItem[] = [
+{ label: 'About', to: '/about' },
 { label: 'Courses', to: '/courses' },
 { label: 'How it works', to: '/how-it-works' },
-{ label: 'Jobs', to: '/jobs' },
-{ label: 'About', to: '/about' }];
+{ label: 'Jobs', to: '/jobs' }];
 
 
 export const footerNav: {title: string;links: NavItem[];}[] = [
