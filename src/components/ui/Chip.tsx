@@ -4,7 +4,7 @@ interface ChipProps {
   children: React.ReactNode;
   selected?: boolean;
   onClick?: () => void;
-  tone?: 'neutral' | 'forest' | 'sand' | 'peach' | 'leaf';
+  tone?: 'neutral' | 'forest' | 'sand' | 'peach' | 'gold' | 'leaf';
   className?: string;
 }
 
@@ -13,6 +13,7 @@ const tagTones = {
   forest: 'bg-forest-soft text-forest-dark',
   sand: 'bg-sand text-ink',
   peach: 'bg-peach text-ink',
+  gold: 'bg-gold text-ink',
   leaf: 'bg-leaf-soft text-leaf-dark'
 };
 

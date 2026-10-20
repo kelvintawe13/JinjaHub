@@ -36,6 +36,9 @@ export function About() {
               <ClockIcon className="h-4 w-4" aria-hidden="true" />
               Every course runs 6–12 months
             </Chip>
+            <Chip tone="gold" className="px-3.5 py-2 text-sm">
+              Free of charge
+            </Chip>
             <Chip tone="forest" className="px-3.5 py-2 text-sm">
               <MapPinIcon className="h-4 w-4" aria-hidden="true" />
               Kikaramoja and beyond

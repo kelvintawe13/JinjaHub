@@ -14,7 +14,7 @@ export function CourseDetail() {
   { icon: ClockIcon, label: 'Length', value: course.duration },
   { icon: CalendarDaysIcon, label: 'Schedule', value: course.schedule },
   { icon: MapPinIcon, label: 'Where', value: 'The Edu-Hub, Jinja' },
-  { icon: HandCoinsIcon, label: 'Fees', value: 'Confirmed on your mentor call. Fee support available.' }];
+  { icon: HandCoinsIcon, label: 'Cost', value: 'Free of charge, certificate included.' }];
 
 
   return (

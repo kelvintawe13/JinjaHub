@@ -3,7 +3,7 @@ import type { Story } from '../types/content';
 export const stories: Story[] = [
 {
   id: 'story-1',
-  quote: 'My mentor called me before I even finished worrying about the fees. Now I guide groups on the river every weekend.',
+  quote: 'My mentor called me before I even finished worrying about money. Now I guide groups on the river every weekend.',
   name: 'Learner name',
   detail: 'Tour Guiding on the Nile',
   initials: 'TG'

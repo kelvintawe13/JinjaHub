@@ -11,13 +11,13 @@ export const faqs: Faq[] = [
   id: 'cost',
   question: 'What does it cost?',
   answer:
-  'Each course has a fee that your mentor confirms with you after your first call. Many learners get part or all of it covered through fee support.'
+  'Nothing. Training at the hub is free of charge, including your mentoring and your certificate. Your mentor goes over any small personal costs, like transport, after your first call.'
 },
 {
   id: 'cant-pay',
-  question: "What if I can't pay?",
+  question: 'What if I cannot afford the small costs?',
   answer:
-  'Tick "I need help paying fees" on the application. It does not affect whether you are accepted. Your mentor will talk through what support is available.'
+  'Tick "I need help paying fees" on the application. It does not affect whether you are accepted. Your mentor will talk through support for the costs that come with training.'
 },
 {
   id: 'exam',

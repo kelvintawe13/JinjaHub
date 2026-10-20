@@ -15,7 +15,7 @@ type ContactValues = {name: string;reply: string;topic: string;message: string;}
 
 const topics = [
 { value: 'courses', label: 'Courses and applying' },
-{ value: 'fees', label: 'Fees and fee support' },
+{ value: 'fees', label: 'Costs and support' },
 { value: 'hiring', label: 'Hiring our graduates' },
 { value: 'other', label: 'Something else' }];
 

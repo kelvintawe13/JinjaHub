@@ -17,8 +17,8 @@ export const features: Feature[] = [
 },
 {
   id: 'fees',
-  title: 'Help with fees',
-  body: "Tick one box on the application. Cost never decides who gets in. We'll talk through what you can pay.",
+  title: 'Free of charge',
+  body: 'Every course costs nothing, certificate included. Tick one box if a small cost could still stop you. Cost never decides who gets in.',
   icon: HandCoinsIcon
 },
 {

@@ -18,9 +18,14 @@ export function Hero() {
     <section aria-labelledby="hero-title" className="overflow-hidden">
       <div className="mx-auto grid max-w-page items-center gap-10 px-4 pb-8 pt-6 md:px-6 md:pt-10 lg:pb-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
-          <Chip tone="forest" className="px-3 py-1">
-            For ages 14 to 21 in Jinja
-          </Chip>
+          <div className="flex flex-wrap gap-2">
+            <Chip tone="forest" className="px-3 py-1">
+              For ages 14 to 21 in Jinja
+            </Chip>
+            <Chip tone="gold" className="px-3 py-1">
+              Free of charge
+            </Chip>
+          </div>
           <h1 id="hero-title" className="mt-5 text-5xl font-semibold tracking-tight lg:text-6xl">
             Skills that lead to work
           </h1>

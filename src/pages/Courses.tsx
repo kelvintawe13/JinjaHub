@@ -43,13 +43,18 @@ export function Courses() {
   return (
     <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
       <header className="max-w-2xl">
-        <Chip tone="peach" className="px-3.5 py-1.5 text-sm">
-          <ClockIcon className="h-4 w-4" aria-hidden="true" />
-          Every course runs 6–12 months
-        </Chip>
+        <div className="flex flex-wrap gap-2">
+          <Chip tone="peach" className="px-3.5 py-1.5 text-sm">
+            <ClockIcon className="h-4 w-4" aria-hidden="true" />
+            Every course runs 6–12 months
+          </Chip>
+          <Chip tone="gold" className="px-3.5 py-1.5 text-sm">
+            Free of charge
+          </Chip>
+        </div>
         <h1 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">All courses</h1>
         <p className="mt-3 text-base leading-relaxed text-muted">
-          Practical courses of 6 to 12 months, with sessions that fit around other work. Each one shows the work it leads to, and none of them need an entry exam.
+          Practical courses of 6 to 12 months, with sessions that fit around other work. Each one is free of charge and shows the work it leads to. None of them need an entry exam.
         </p>
       </header>
 

@@ -9,7 +9,7 @@ interface AuthLayoutProps {
   footer?: React.ReactNode;
 }
 
-const promises = ['No entry exam', 'Fee support if you need it', 'A certificate you can share'];
+const promises = ['No entry exam', 'Free of charge', 'A certificate you can share'];
 
 export function AuthLayout({ title, subtitle, children, footer }: AuthLayoutProps) {
   return (
