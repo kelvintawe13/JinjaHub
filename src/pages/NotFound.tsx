@@ -3,6 +3,7 @@ import { ButtonLink } from '../components/ui/ButtonLink';
 export function NotFound() {
   return (
     <div className="mx-auto flex max-w-xl flex-col items-center px-4 py-20 text-center">
+      <img src="/not-found.svg" alt="" className="w-full max-w-[300px]" />
       <h1 className="text-3xl font-semibold tracking-tight">We can't find that page</h1>
       <p className="mt-3 text-base text-muted">The link may be old, or the page has moved.</p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">

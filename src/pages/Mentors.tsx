@@ -17,17 +17,22 @@ const weekToWeek = [
 export function Mentors() {
   return (
     <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
-      <header className="max-w-2xl">
-        <Chip tone="forest" className="px-3 py-1">
-          Your person
-        </Chip>
-        <h1 className="mt-5 text-3xl font-semibold tracking-tight md:text-4xl">
-          A mentor beside you, all the way
-        </h1>
-        <p className="mt-4 text-base leading-relaxed text-muted">
-          From your first call to your first job, one mentor stays with you the whole way. Every learner gets
-          one. Here is what yours will do.
-        </p>
+      <header className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="max-w-2xl">
+          <Chip tone="forest" className="px-3 py-1">
+            Your person
+          </Chip>
+          <h1 className="mt-5 text-3xl font-semibold tracking-tight md:text-4xl">
+            A mentor beside you, all the way
+          </h1>
+          <p className="mt-4 text-base leading-relaxed text-muted">
+            From your first call to your first job, one mentor stays with you the whole way. Every learner gets
+            one. Here is what yours will do.
+          </p>
+        </div>
+        <div className="overflow-hidden rounded-3xl ring-1 ring-line">
+          <img src="/mentor-call.svg" alt="" className="aspect-[4/3] w-full object-cover" />
+        </div>
       </header>
 
       <ul className="mt-14 grid gap-8 md:grid-cols-3">

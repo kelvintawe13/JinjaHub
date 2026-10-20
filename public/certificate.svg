@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Certificate with a gold seal and ribbon">
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ground -->
+    <path d="M150 800 H1050" stroke="#E8E8E8" stroke-width="5"/>
+    <ellipse cx="600" cy="766" rx="300" ry="14" fill="#EFEFEF" stroke="none"/>
+    <!-- certificate sheet -->
+    <rect x="330" y="230" width="540" height="440" rx="20" fill="#FFFFFF"/>
+    <rect x="374" y="274" width="452" height="352" rx="12" fill="#FBF6EC"/>
+    <line x1="430" y1="340" x2="770" y2="340" stroke-width="6"/>
+    <line x1="470" y1="386" x2="730" y2="386" stroke="#BDBDBD" stroke-width="5"/>
+    <line x1="470" y1="418" x2="700" y2="418" stroke="#BDBDBD" stroke-width="5"/>
+    <!-- corner fold -->
+    <path d="M870 670 L758 670 L870 558 Z" fill="#F0F0F0"/>
+    <!-- seal -->
+    <circle cx="700" cy="560" r="48" fill="#E2A93B"/>
+    <circle cx="700" cy="560" r="28" fill="none" stroke="#1F4A32" stroke-width="5"/>
+    <!-- ribbons -->
+    <polygon points="668,596 650,672 684,654 706,672 700,596" fill="#F76707"/>
+    <!-- pencil -->
+    <g transform="rotate(-12 880 430)">
+      <rect x="800" y="418" width="150" height="26" rx="6" fill="#F79A5C"/>
+      <polygon points="950,418 988,431 950,444" fill="#F0F0F0"/>
+      <rect x="786" y="414" width="16" height="34" rx="4" fill="#F76707"/>
+    </g>
+    <!-- laurel sprigs -->
+    <path d="M200 782 C194 730 198 700 210 672" fill="none"/>
+    <path d="M206 684 Q180 668 182 642 Q206 654 206 684 Z" fill="#2F6B47"/>
+    <path d="M214 708 Q238 694 244 670 Q220 680 214 708 Z" fill="#2F6B47"/>
+    <path d="M1000 782 C1006 730 1002 700 990 672" fill="none"/>
+    <path d="M994 684 Q968 668 970 642 Q994 654 994 684 Z" fill="#2F6B47"/>
+    <path d="M984 708 Q960 694 954 670 Q978 680 984 708 Z" fill="#2F6B47"/>
+    <!-- gold accents -->
+    <path d="M1060 320 L1060 352 M1044 336 L1076 336" stroke="#E2A93B" stroke-width="6"/>
+    <circle cx="180" cy="350" r="6" fill="#E2A93B" stroke="none"/>
+  </g>
+</svg>

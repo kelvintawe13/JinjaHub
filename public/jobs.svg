@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Briefcase with a work badge and a paper plane">
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ground -->
+    <path d="M130 790 H1080" stroke="#E8E8E8" stroke-width="5"/>
+    <ellipse cx="450" cy="776" rx="300" ry="14" fill="#EFEFEF" stroke="none"/>
+    <!-- paper plane -->
+    <polygon points="300,220 440,180 350,286 310,266" fill="#F0F0F0"/>
+    <path d="M350 286 L310 266" stroke-width="5"/>
+    <path d="M300 220 C280 190 270 170 262 148" fill="none" stroke="#BDBDBD" stroke-width="5" stroke-dasharray="2 26"/>
+    <!-- briefcase -->
+    <path d="M380 560 Q460 486 540 560" fill="none" stroke-width="9"/>
+    <rect x="290" y="560" width="340" height="230" rx="24" fill="#E5E5E5"/>
+    <rect x="290" y="672" width="340" height="26" fill="#F76707"/>
+    <!-- latch -->
+    <circle cx="460" cy="688" r="14" fill="#1A1A1A"/>
+    <!-- badge -->
+    <line x1="660" y1="540" x2="706" y2="452"/>
+    <rect x="652" y="430" width="150" height="196" rx="20" fill="#FFFFFF"/>
+    <rect x="682" y="464" width="90" height="72" rx="10" fill="#F79A5C"/>
+    <line x1="682" y1="562" x2="772" y2="562" stroke="#BDBDBD" stroke-width="5"/>
+    <line x1="682" y1="584" x2="744" y2="584" stroke="#BDBDBD" stroke-width="5"/>
+    <!-- sprig -->
+    <path d="M950 782 C942 730 946 698 958 668" fill="none"/>
+    <path d="M954 680 Q928 664 930 638 Q954 650 954 680 Z" fill="#2F6B47"/>
+    <path d="M962 706 Q986 692 992 668 Q968 678 962 706 Z" fill="#2F6B47"/>
+    <!-- gold accents -->
+    <circle cx="180" cy="420" r="6" fill="#E2A93B" stroke="none"/>
+    <circle cx="1030" cy="560" r="6" fill="#F76707" stroke="none"/>
+    <path d="M990 210 L990 242 M974 226 L1006 226" stroke="#E2A93B" stroke-width="6"/>
+  </g>
+</svg>

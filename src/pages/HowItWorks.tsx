@@ -5,11 +5,16 @@ import { stages } from '../data/steps';
 export function HowItWorks() {
   return (
     <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
-      <header className="max-w-2xl">
-        <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">How it works</h1>
-        <p className="mt-3 text-base leading-relaxed text-muted">
-          Five stages from your first look to your first job. A mentor stays with you the whole way.
-        </p>
+      <header className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="max-w-2xl">
+          <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">How it works</h1>
+          <p className="mt-3 text-base leading-relaxed text-muted">
+            Five stages from your first look to your first job. A mentor stays with you the whole way.
+          </p>
+        </div>
+        <div className="overflow-hidden rounded-3xl ring-1 ring-line">
+          <img src="/journey.svg" alt="" className="aspect-[4/3] w-full object-cover" />
+        </div>
       </header>
 
       <ol className="mt-14">

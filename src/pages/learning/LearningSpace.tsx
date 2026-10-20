@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { AwardIcon, BookOpenIcon, HandCoinsIcon, MessageCircleIcon, UserRoundIcon, LogOutIcon } from 'lucide-react';
+import { BookOpenIcon, HandCoinsIcon, MessageCircleIcon, LogOutIcon } from 'lucide-react';
 import { StatCard } from '../../components/cards/StatCard';
 import { ButtonLink } from '../../components/ui/ButtonLink';
 import { Button } from '../../components/ui/Button';
@@ -14,19 +14,19 @@ import { cn } from '../../utils/cn';
 
 export type LearningSection = 'dashboard' | 'learning' | 'messages' | 'profile' | 'certificate';
 
-const emptyStates: Record<'learning' | 'messages' | 'certificate', {icon: typeof BookOpenIcon;title: string;body: string;}> = {
+const emptyStates: Record<'learning' | 'messages' | 'certificate', {image: string;title: string;body: string;}> = {
   learning: {
-    icon: BookOpenIcon,
+    image: '/learning-board.svg',
     title: 'Your course opens after orientation',
     body: 'Once your course is confirmed, each module and your progress will show here.'
   },
   messages: {
-    icon: MessageCircleIcon,
+    image: '/mentor-call.svg',
     title: 'Your mentor will message you here first',
     body: 'After your first call, your conversations and reminders will appear in this space.'
   },
   certificate: {
-    icon: AwardIcon,
+    image: '/certificate.svg',
     title: 'Finish your course to unlock your certificate',
     body: 'You will get a link employers can open to check it.'
   }
@@ -170,12 +170,10 @@ export function LearningSpace({ section }: {section: LearningSection;}) {
 
 }
 
-function EmptyState({ icon: Icon, title, body }: {icon: typeof UserRoundIcon;title: string;body: string;}) {
+function EmptyState({ image, title, body }: {image: string;title: string;body: string;}) {
   return (
     <div className="flex flex-col items-start rounded-3xl bg-paper p-6 ring-1 ring-line md:p-10">
-      <span className="grid h-12 w-12 place-items-center rounded-2xl bg-forest-soft text-forest-dark">
-        <Icon className="h-6 w-6" aria-hidden="true" />
-      </span>
+      <img src={image} alt="" className="w-full max-w-sm rounded-2xl ring-1 ring-line" />
       <h1 className="mt-6 text-2xl font-semibold tracking-tight md:text-3xl">{title}</h1>
       <p className="mt-2 max-w-md text-lg text-muted">{body}</p>
       <ButtonLink to="/dashboard" variant="secondary" className="mt-8">

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="A course board with finished modules and a progress bar">
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ground -->
+    <path d="M120 800 H1080" stroke="#E8E8E8" stroke-width="5"/>
+    <ellipse cx="560" cy="782" rx="330" ry="14" fill="#EFEFEF" stroke="none"/>
+    <!-- board -->
+    <rect x="230" y="180" width="620" height="520" rx="30" fill="#FFFFFF"/>
+    <rect x="270" y="220" width="540" height="380" rx="16" fill="#F0F0F0" stroke="none"/>
+    <!-- module rows -->
+    <circle cx="322" cy="286" r="24" fill="#F76707"/>
+    <path d="M312 286 L320 294 L336 276" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <rect x="370" y="270" width="280" height="14" rx="7" fill="#1A1A1A" stroke="none"/>
+    <rect x="676" y="270" width="80" height="14" rx="7" fill="#E5E5E5" stroke="none"/>
+    <circle cx="322" cy="366" r="24" fill="#FFFFFF"/>
+    <rect x="370" y="352" width="320" height="14" rx="7" fill="#949494" stroke="none"/>
+    <circle cx="322" cy="446" r="24" fill="#FFFFFF"/>
+    <rect x="370" y="432" width="240" height="14" rx="7" fill="#949494" stroke="none"/>
+    <!-- progress bar -->
+    <rect x="300" y="628" width="480" height="34" rx="17" fill="#F0F0F0"/>
+    <rect x="308" y="636" width="220" height="18" rx="9" fill="#F76707" stroke="none"/>
+    <!-- pencil -->
+    <g transform="rotate(10 130 520)">
+      <rect x="60" y="508" width="160" height="26" rx="6" fill="#F79A5C"/>
+      <polygon points="220,508 258,521 220,534" fill="#F0F0F0"/>
+      <polygon points="248,518 258,521 248,524" fill="#1A1A1A" stroke="none"/>
+      <rect x="46" y="504" width="16" height="34" rx="4" fill="#F76707"/>
+    </g>
+    <!-- plant -->
+    <polygon points="880,600 992,600 964,708 908,708" fill="#F79A5C"/>
+    <path d="M930 600 C920 534 904 502 880 476" fill="none"/>
+    <path d="M942 600 C950 530 968 498 994 474" fill="none"/>
+    <path d="M884 484 Q858 460 866 434 Q892 450 884 484 Z" fill="#2F6B47"/>
+    <path d="M992 482 Q1012 454 1006 428 Q982 446 992 482 Z" fill="#2F6B47"/>
+    <path d="M936 494 Q916 470 924 446 Q950 464 936 494 Z" fill="#2F6B47"/>
+    <!-- gold accents -->
+    <path d="M1020 300 L1020 332 M1004 316 L1036 316" stroke="#E2A93B" stroke-width="6"/>
+    <circle cx="180" cy="300" r="6" fill="#E2A93B" stroke="none"/>
+    <circle cx="150" cy="580" r="6" fill="#F76707" stroke="none"/>
+  </g>
+</svg>

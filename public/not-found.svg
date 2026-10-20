@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-label="A folded map with a magnifier and an X">
+  <rect width="1200" height="840" fill="#FFFFFF"/>
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- folded map panels -->
+    <polygon points="300,340 510,290 510,650 300,690" fill="#F0F0F0"/>
+    <polygon points="510,290 720,340 720,700 510,650" fill="#FFFFFF"/>
+    <polygon points="720,340 930,290 930,650 720,700" fill="#E5E5E5"/>
+    <line x1="510" y1="290" x2="510" y2="650"/>
+    <line x1="720" y1="340" x2="720" y2="700"/>
+    <!-- dashed route on the map -->
+    <path d="M350 610 C420 560 470 540 560 520 C640 500 690 500 742 438" fill="none" stroke="#F76707" stroke-width="8" stroke-dasharray="2 30"/>
+    <!-- X marks the spot -->
+    <path d="M742 438 L798 380 M798 438 L742 380" stroke="#F76707" stroke-width="7"/>
+    <!-- magnifier -->
+    <circle cx="440" cy="520" r="72" fill="#FFFFFF" fill-opacity="0.9"/>
+    <circle cx="440" cy="520" r="46" fill="none" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="492" y1="572" x2="564" y2="646" stroke-width="14"/>
+    <!-- sprigs -->
+    <path d="M190 760 C182 714 186 684 198 656" fill="none"/>
+    <path d="M194 668 Q168 652 170 626 Q194 638 194 668 Z" fill="#2F6B47"/>
+    <path d="M202 692 Q226 678 232 654 Q208 664 202 692 Z" fill="#2F6B47"/>
+    <path d="M980 760 C988 714 984 684 972 656" fill="none"/>
+    <path d="M976 668 Q950 652 952 626 Q976 638 976 668 Z" fill="#2F6B47"/>
+    <path d="M1002 760 C1004 730 1002 712 996 694" fill="none"/>
+    <path d="M1000 704 Q1022 690 1024 666 Q1000 676 1000 704 Z" fill="#2F6B47"/>
+    <!-- gold accents -->
+    <path d="M620 170 L620 204 M604 187 L636 187" stroke="#E2A93B" stroke-width="6"/>
+    <circle cx="380" cy="180" r="6" fill="#E2A93B" stroke="none"/>
+    <circle cx="1010" cy="250" r="6" fill="#F76707" stroke="none"/>
+  </g>
+</svg>

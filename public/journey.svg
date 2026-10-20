@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="A dotted journey path with milestones and a finish flag">
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ground dashes -->
+    <path d="M120 790 H1080" stroke="#E8E8E8" stroke-width="5"/>
+    <!-- dotted journey path -->
+    <path d="M215 715 C340 668 380 545 500 512 C648 472 705 552 830 462 C938 388 948 300 1012 214"
+      fill="none" stroke-dasharray="1 40" stroke-width="9"/>
+    <!-- start point -->
+    <circle cx="215" cy="715" r="56" fill="#F76707"/>
+    <!-- milestone one -->
+    <circle cx="500" cy="512" r="46" fill="#F0F0F0"/>
+    <path d="M482 512 L496 526 L520 496" fill="none" stroke-width="6"/>
+    <!-- milestone two -->
+    <circle cx="830" cy="462" r="46" fill="#E5E5E5"/>
+    <path d="M812 462 L826 476 L850 446" fill="none" stroke-width="6"/>
+    <!-- finish flag -->
+    <line x1="1012" y1="214" x2="1012" y2="102"/>
+    <polygon points="1012,112 1150,148 1012,184" fill="#F76707"/>
+    <!-- sprigs -->
+    <path d="M132 782 C126 736 130 706 142 678" fill="none"/>
+    <path d="M138 692 Q112 676 114 652 Q138 664 138 692 Z" fill="#2F6B47"/>
+    <path d="M146 716 Q170 702 176 678 Q152 688 146 716 Z" fill="#2F6B47"/>
+    <path d="M1056 782 C1064 744 1060 716 1048 690" fill="none"/>
+    <path d="M1052 702 Q1078 688 1080 662 Q1056 674 1052 702 Z" fill="#2F6B47"/>
+    <!-- gold accents -->
+    <path d="M300 200 L300 244 M278 222 L322 222" stroke="#E2A93B" stroke-width="6"/>
+    <path d="M880 140 L880 172 M864 156 L896 156" stroke="#E2A93B" stroke-width="6"/>
+    <circle cx="660" cy="770" r="6" fill="#E2A93B" stroke="none"/>
+    <circle cx="710" cy="790" r="6" fill="#F76707" stroke="none"/>
+  </g>
+</svg>

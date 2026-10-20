@@ -57,6 +57,9 @@ export function Contact() {
         <div>
           <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">Talk to us</h1>
           <p className="mt-3 text-base leading-relaxed text-muted">Call, visit, or send a message. We reply within 2 working days.</p>
+          <div className="mt-8 overflow-hidden rounded-3xl ring-1 ring-line">
+            <img src="/contact.svg" alt="" className="aspect-[4/3] w-full object-cover" />
+          </div>
           <ul className="mt-10 space-y-6">
             <li className="flex gap-4">
               <PhoneIcon className="mt-1 h-5 w-5 text-forest" aria-hidden="true" />

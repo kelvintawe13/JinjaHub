@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Phone with a chat from a mentor and a weekly calendar">
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ground -->
+    <path d="M150 800 H1050" stroke="#E8E8E8" stroke-width="5"/>
+    <ellipse cx="650" cy="772" rx="300" ry="14" fill="#EFEFEF" stroke="none"/>
+    <!-- call arcs -->
+    <path d="M504 222 Q478 256 476 298" fill="none" stroke-width="6"/>
+    <path d="M476 202 Q440 246 438 298" fill="none" stroke-width="6"/>
+    <!-- heart -->
+    <path d="M398 500 C388 490 372 492 372 506 C372 518 398 532 398 532 C398 532 424 518 424 506 C424 492 408 490 398 500 Z" fill="#F76707" stroke-width="5"/>
+    <!-- phone -->
+    <rect x="520" y="160" width="330" height="590" rx="46" fill="#FFFFFF"/>
+    <rect x="550" y="212" width="270" height="490" rx="24" fill="#F0F0F0"/>
+    <!-- chat bubbles -->
+    <rect x="570" y="256" width="170" height="60" rx="18" fill="#F76707"/>
+    <path d="M588 316 L578 340 L610 318" fill="#F76707" stroke-width="5"/>
+    <rect x="604" y="356" width="188" height="52" rx="16" fill="#FFFFFF"/>
+    <line x1="622" y1="382" x2="746" y2="382" stroke="#BDBDBD" stroke-width="5"/>
+    <rect x="570" y="440" width="150" height="52" rx="16" fill="#FFFFFF"/>
+    <line x1="588" y1="466" x2="664" y2="466" stroke="#BDBDBD" stroke-width="5"/>
+    <rect x="604" y="524" width="188" height="52" rx="16" fill="#FFFFFF"/>
+    <line x1="622" y1="550" x2="746" y2="550" stroke="#BDBDBD" stroke-width="5"/>
+    <rect x="588" y="610" width="200" height="26" rx="13" fill="#E5E5E5"/>
+    <!-- calendar -->
+    <rect x="150" y="560" width="260" height="230" rx="18" fill="#FFFFFF"/>
+    <rect x="150" y="560" width="260" height="60" fill="#F79A5C"/>
+    <line x1="196" y1="536" x2="196" y2="568" stroke-width="6"/>
+    <line x1="366" y1="536" x2="366" y2="568" stroke-width="6"/>
+    <circle cx="206" cy="672" r="13" fill="#F0F0F0"/>
+    <circle cx="280" cy="672" r="13" fill="#F76707"/>
+    <circle cx="354" cy="672" r="13" fill="#F0F0F0"/>
+    <circle cx="206" cy="730" r="13" fill="#F0F0F0"/>
+    <circle cx="280" cy="730" r="13" fill="#F0F0F0"/>
+    <circle cx="354" cy="730" r="13" fill="#E2A93B"/>
+    <rect x="170" y="756" width="130" height="12" fill="#E5E5E5" stroke="none"/>
+    <!-- sprig -->
+    <path d="M1000 770 C1008 724 1004 694 992 666" fill="none"/>
+    <path d="M996 678 Q970 662 972 636 Q996 648 996 678 Z" fill="#2F6B47"/>
+    <path d="M1004 704 Q1028 690 1034 666 Q1010 676 1004 704 Z" fill="#2F6B47"/>
+    <!-- gold accent -->
+    <path d="M1080 340 L1080 372 M1064 356 L1096 356" stroke="#E2A93B" stroke-width="6"/>
+  </g>
+</svg>
