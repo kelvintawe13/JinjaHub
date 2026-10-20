@@ -151,7 +151,7 @@ export function Apply() {
           label="I need help paying fees"
           description="Tick this if cost could stop you. It won't affect whether you're accepted." />
         
-        <Button type="submit" size="lg" fullWidth loading={loading} loadingText="Sending…">
+        <Button type="submit" size="lg" fullWidth glow loading={loading} loadingText="Sending…">
           {user ? 'Send application' : 'Continue'}
         </Button>
         {!user && <p className="text-center text-sm text-muted">Next, you'll create an account so your mentor can reach you.</p>}

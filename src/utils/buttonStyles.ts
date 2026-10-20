@@ -22,6 +22,8 @@ interface ButtonClassOptions {
   variant?: ButtonVariant;
   size?: ButtonSize;
   fullWidth?: boolean;
+  /** Spinning light ring + hover lift for strategic call-to-action buttons. */
+  glow?: boolean;
   className?: string;
 }
 
@@ -29,13 +31,15 @@ export function buttonClasses({
   variant = 'primary',
   size = 'md',
   fullWidth = false,
+  glow = false,
   className
 }: ButtonClassOptions): string {
   return cn(
-    'inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-[background-color,color,transform,opacity] duration-150 ease-snappy active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-canvas disabled:pointer-events-none disabled:opacity-60',
+    'inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-[background-color,color,transform,opacity] duration-150 ease-snappy active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-canvas',
     variants[variant],
     sizes[size],
     fullWidth && 'w-full',
+    glow && 'btn-glow',
     className
   );
 }

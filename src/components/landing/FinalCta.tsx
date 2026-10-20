@@ -10,7 +10,7 @@ export function FinalCta() {
           </h2>
           <p className="mt-2 text-base text-paper/75">Takes about 3 minutes. A mentor calls you within 3 days.</p>
         </div>
-        <ButtonLink to="/apply" size="lg" className="px-7">
+        <ButtonLink to="/apply" size="lg" glow className="px-7">
           Apply now
         </ButtonLink>
       </div>

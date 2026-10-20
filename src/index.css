@@ -18,6 +18,62 @@ body {
   overflow-x: clip;
 }
 
+/* === Spinning light ring for strategic CTA buttons (.btn-glow) === */
+
+@property --glow-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.btn-glow {
+  position: relative;
+  isolation: isolate;
+}
+
+/* A light beam chases itself around the button edge. */
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--glow-angle),
+    transparent 0deg,
+    transparent 250deg,
+    rgba(255, 123, 34, 0.85) 295deg,
+    #ffd8a8 325deg,
+    #ffffff 345deg,
+    transparent 360deg
+  );
+  animation: btn-glow-spin 1.8s linear infinite;
+}
+
+@keyframes btn-glow-spin {
+  to {
+    --glow-angle: 360deg;
+  }
+}
+
+/* Hover animations */
+.btn-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px -10px rgba(247, 103, 7, 0.45);
+}
+
+.btn-glow:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: none;
+}
+
+/* Browsers without conic-gradient angle animation: show a static soft ring. */
+@supports not (background: conic-gradient(from 0deg, red, blue)) {
+  .btn-glow::before {
+    display: none;
+  }
+}
+
 /* Line-clamp utility used by <ExpandableText />; line count comes from the --clamp-lines custom property. */
 .clamp-text {
   display: -webkit-box;
@@ -33,5 +89,11 @@ body {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  /* ACPI-safe: static glow instead of the spinning beam. */
+  .btn-glow::before {
+    animation: none;
+    background: radial-gradient(60% 100% at 50% 0%, rgba(255, 123, 34, 0.55), transparent 70%);
   }
 }

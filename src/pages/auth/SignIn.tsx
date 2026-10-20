@@ -75,7 +75,7 @@ export function SignIn() {
           </Link>
         </div>
         <div className="space-y-3 pt-1">
-          <Button type="submit" size="lg" fullWidth loading={loading} loadingText="Signing in…">
+          <Button type="submit" size="lg" fullWidth glow loading={loading} loadingText="Signing in…">
             Sign in
           </Button>
           <div className="grid grid-cols-2 gap-3">

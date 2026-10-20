@@ -28,7 +28,7 @@ export function Hero() {
             Hands-on courses in farming, tourism, computers and business, with a mentor beside you from your first class to your first job.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <ButtonLink to="/courses" size="lg">
+            <ButtonLink to="/courses" size="lg" glow>
               Explore courses
             </ButtonLink>
             <ButtonLink to="/#how" size="lg" variant="secondary">

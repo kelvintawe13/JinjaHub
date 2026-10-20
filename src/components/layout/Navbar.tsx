@@ -16,7 +16,7 @@ export function Navbar() {
   useEffect(() => setOpen(false), [location.pathname, location.hash]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-canvas/95 backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-line bg-canvas/95 backdrop-blur">
       <nav aria-label="Main" className="mx-auto flex h-14 max-w-page items-center justify-between gap-6 px-5 md:px-8">
         <Logo />
         <ul className="hidden items-center gap-1 lg:flex">
@@ -46,7 +46,7 @@ export function Navbar() {
               <ButtonLink to="/sign-in" variant="ghost" size="sm">
                 Sign in
               </ButtonLink>
-              <ButtonLink to="/sign-up" size="sm">
+              <ButtonLink to="/sign-up" size="sm" glow>
                 Get started
               </ButtonLink>
             </>
@@ -71,7 +71,7 @@ export function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
-          className="border-t border-line bg-canvas px-5 pb-6 pt-2 lg:hidden">
+          className="max-h-[calc(100dvh-3.5rem)] overflow-y-auto border-t border-line bg-canvas px-5 pb-6 pt-2 lg:hidden">
           
             <ul className="divide-y divide-line">
               {mainNav.map((item) =>

@@ -7,6 +7,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   fullWidth?: boolean;
   loading?: boolean;
   loadingText?: string;
+  /** Spinning light ring + hover lift for strategic call-to-action buttons. */
+  glow?: boolean;
 }
 
 export function Button({
@@ -15,6 +17,7 @@ export function Button({
   fullWidth = false,
   loading = false,
   loadingText,
+  glow = false,
   className,
   children,
   disabled,
@@ -24,7 +27,7 @@ export function Button({
   return (
     <button
       type={type}
-      className={buttonClasses({ variant, size, fullWidth, className })}
+      className={buttonClasses({ variant, size, fullWidth, glow, className })}
       disabled={disabled || loading}
       aria-busy={loading || undefined}
       {...rest}>

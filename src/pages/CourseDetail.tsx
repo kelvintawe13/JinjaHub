@@ -77,7 +77,7 @@ export function CourseDetail() {
                 </div>
               )}
             </dl>
-            <ButtonLink to={`/apply?course=${course.slug}`} size="lg" fullWidth className="mt-7">
+            <ButtonLink to={`/apply?course=${course.slug}`} size="lg" fullWidth glow className="mt-7">
               Apply now
             </ButtonLink>
             <p className="mt-3 text-center text-sm text-muted">About 3 minutes · No entry exam</p>

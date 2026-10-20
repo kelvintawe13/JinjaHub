@@ -134,7 +134,7 @@ export function SignUp() {
           error={form.errorFor('consent')}
           label="I agree to the Edu-Hub terms and privacy notice, and to be contacted by SMS or phone about my learning." />
         
-        <Button type="submit" size="lg" fullWidth loading={loading} loadingText="Creating account…">
+        <Button type="submit" size="lg" fullWidth glow loading={loading} loadingText="Creating account…">
           Create account
         </Button>
       </form>

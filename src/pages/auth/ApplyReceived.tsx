@@ -1,13 +1,22 @@
+import { useState, useEffect } from 'react';
 import { AuthLayout } from '../../components/auth/AuthLayout';
 import { ButtonLink } from '../../components/ui/ButtonLink';
+import { Celebration } from '../../components/ui/Celebration';
 import { useAuth } from '../../hooks/useAuth';
 import { applicationNextSteps } from '../../data/nextSteps';
 import { formatPhone } from '../../utils/validation';
 
 export function ApplyReceived() {
   const { user, application } = useAuth();
+  const [celebrate, setCelebrate] = useState(false);
   const firstName = (application?.name ?? user?.name ?? '').split(' ')[0];
   const phone = application?.phone ?? user?.phone;
+
+  // Trigger the flower celebration shortly after landing on this confirmation page.
+  useEffect(() => {
+    const timer = setTimeout(() => setCelebrate(true), 400);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <AuthLayout
@@ -31,9 +40,20 @@ export function ApplyReceived() {
           </li>
         )}
       </ol>
-      <ButtonLink to="/dashboard" size="lg" fullWidth className="mt-10">
+      <ButtonLink to="/dashboard" size="lg" fullWidth glow className="mt-10">
         Preview my learning space
       </ButtonLink>
+
+      <Celebration
+        show={celebrate}
+        onDone={() => setCelebrate(false)}
+        title="Application received!"
+        message={
+          phone
+            ? `A mentor will call ${formatPhone(phone)} within 3 days. Your learning space is ready in the meantime.`
+            : 'A mentor will call you within 3 days. Your learning space is ready in the meantime.'
+        }
+      />
     </AuthLayout>);
 
 }
