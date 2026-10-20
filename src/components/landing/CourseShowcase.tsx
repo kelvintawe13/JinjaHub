@@ -10,7 +10,7 @@ export function CourseShowcase({ layout }: {layout: CourseShowcaseLayout;}) {
   const featured = courses.filter((c) => c.featured);
 
   return (
-    <section id="courses" aria-labelledby="courses-title" className="mx-auto max-w-page scroll-mt-16 px-5 py-20 md:px-8 md:py-28">
+    <section id="courses" aria-labelledby="courses-title" className="mx-auto max-w-page scroll-mt-16 px-4 py-12 md:px-6 md:py-16">
       <SectionHeading
         id="courses-title"
         title="One course in each field"

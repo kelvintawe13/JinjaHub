@@ -41,7 +41,7 @@ export function Courses() {
   }
 
   return (
-    <div className="mx-auto max-w-page px-5 py-14 md:px-8 md:py-20">
+    <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
       <header className="max-w-2xl">
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">All courses</h1>
         <p className="mt-3 text-base leading-relaxed text-muted">
@@ -50,7 +50,7 @@ export function Courses() {
       </header>
 
       <div className="mt-10 flex flex-col gap-4 border-y border-line py-5 lg:flex-row lg:items-center lg:justify-between">
-        <div role="group" aria-label="Field" className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 lg:mx-0 lg:px-0 lg:pb-0">
+        <div role="group" aria-label="Field" className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 lg:mx-0 lg:px-0 lg:pb-0">
           <Chip selected={!cat} onClick={() => setCategory(null)}>
             All fields
           </Chip>
@@ -60,7 +60,7 @@ export function Courses() {
             </Chip>
           )}
         </div>
-        <div role="group" aria-label="Course length" className="-mx-5 flex gap-2 overflow-x-auto px-5 lg:mx-0 lg:px-0">
+        <div role="group" aria-label="Course length" className="-mx-4 flex gap-2 overflow-x-auto px-4 lg:mx-0 lg:px-0">
           {lengthOptions.map((o) =>
           <Chip key={o.value} selected={length === o.value} onClick={() => setLength(o.value)}>
               {o.label}
@@ -80,7 +80,7 @@ export function Courses() {
         )}
         </div> :
 
-      <div className="mt-4 flex flex-col items-center rounded-3xl bg-paper px-6 py-16 text-center ring-1 ring-line">
+      <div className="mt-4 flex flex-col items-center rounded-3xl bg-paper px-6 py-10 text-center ring-1 ring-line">
           <SearchXIcon className="h-8 w-8 text-muted" aria-hidden="true" />
           <h2 className="mt-4 text-xl font-semibold">No courses match those filters</h2>
           <p className="mt-2 max-w-sm text-muted">Try another length, or see every course in this field.</p>

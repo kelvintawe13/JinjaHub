@@ -5,7 +5,7 @@ import { landingSteps } from '../../data/steps';
 export function HowItWorksSection() {
   return (
     <section id="how" aria-labelledby="how-title" className="scroll-mt-16 bg-sand/40">
-      <div className="mx-auto max-w-page px-5 py-20 md:px-8 md:py-28">
+      <div className="mx-auto max-w-page px-4 py-12 md:px-6 md:py-16">
         <SectionHeading
           id="how-title"
           title="From first look to first job"

@@ -11,7 +11,7 @@ export function Footer() {
 
   return (
     <footer className="bg-ink text-paper/75">
-      <div className="mx-auto grid max-w-page gap-12 px-5 py-16 md:px-8 lg:grid-cols-[1.3fr_2fr]">
+      <div className="mx-auto grid max-w-page gap-8 px-4 py-10 md:px-6 lg:grid-cols-[1.3fr_2fr]">
         <div>
           <Logo tone="light" />
           <p className="mt-4 max-w-xs text-sm leading-relaxed">Practical skills and a mentor for young people aged 14 to 21 in Jinja.</p>
@@ -52,7 +52,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-paper/10">
-        <div className="mx-auto flex max-w-page flex-col gap-4 px-5 py-6 text-sm md:flex-row md:items-center md:justify-between md:px-8">
+        <div className="mx-auto flex max-w-page flex-col gap-4 px-4 py-4 text-sm md:flex-row md:items-center md:justify-between md:px-6">
           <p>© 2026 Jinja Edu-Hub</p>
           <label className="flex items-center gap-2">
             <GlobeIcon className="h-4 w-4" aria-hidden="true" />

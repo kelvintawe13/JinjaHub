@@ -6,14 +6,14 @@ import { jobs } from '../../data/jobs';
 
 export function JobsTeaser() {
   return (
-    <section aria-labelledby="jobs-title" className="mx-auto max-w-page px-5 py-20 md:px-8 md:py-28">
+    <section aria-labelledby="jobs-title" className="mx-auto max-w-page px-4 py-12 md:px-6 md:py-16">
       <SectionHeading
         id="jobs-title"
         title="Where courses lead"
         intro="Openings from employers around Jinja, or a track to start something of your own."
         action={{ label: 'See all jobs', to: '/jobs' }} />
       
-      <div className="mt-12 grid gap-4 lg:grid-cols-3">
+      <div className="mt-8 grid gap-4 lg:grid-cols-3">
         {jobs.slice(0, 2).map((job) =>
         <JobCard key={job.id} job={job} />
         )}

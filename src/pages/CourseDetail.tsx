@@ -18,7 +18,7 @@ export function CourseDetail() {
 
 
   return (
-    <div className="mx-auto max-w-page px-5 py-10 md:px-8 md:py-14">
+    <div className="mx-auto max-w-page px-4 py-6 md:px-6 md:py-10">
       <Link
         to="/courses"
         className="inline-flex items-center gap-1.5 rounded text-sm font-medium text-muted hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest">
@@ -32,7 +32,7 @@ export function CourseDetail() {
           <Chip tone="forest">{course.categoryLabel}</Chip>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{course.title}</h1>
           <p className="mt-3 max-w-2xl text-lg leading-relaxed text-muted">{course.summary}</p>
-          <img src={course.image} alt="" className="mt-10 aspect-[16/9] w-full rounded-3xl object-cover" />
+          <img src={course.image} alt="" className="mt-6 aspect-[16/9] w-full rounded-3xl object-cover" />
 
           <section aria-labelledby="leads-title" className="mt-14">
             <h2 id="leads-title" className="text-2xl font-semibold tracking-tight">

@@ -5,7 +5,7 @@ import { stories } from '../../data/stories';
 
 export function StoriesSection() {
   return (
-    <section aria-labelledby="stories-title" className="mx-auto max-w-page px-5 py-20 md:px-8 md:py-28">
+    <section aria-labelledby="stories-title" className="mx-auto max-w-page px-4 py-12 md:px-6 md:py-16">
       <SectionHeading
         id="stories-title"
         title="In their words"
@@ -13,7 +13,7 @@ export function StoriesSection() {
         badge={<PlaceholderTag label="Placeholder section" />}
         action={{ label: 'Find your course', to: '/courses' }} />
       
-      <div className="mt-12 grid gap-4 md:grid-cols-3">
+      <div className="mt-8 grid gap-4 md:grid-cols-3">
         {stories.map((story) =>
         <QuoteCard key={story.id} story={story} />
         )}

@@ -6,7 +6,7 @@ import { partnerSlots } from '../../data/stories';
 export function PartnersSection() {
   return (
     <section aria-labelledby="partners-title" className="border-y border-line">
-      <div className="mx-auto max-w-page px-5 py-16 md:px-8 md:py-20">
+      <div className="mx-auto max-w-page px-4 py-10 md:px-6 md:py-14">
         <SectionHeading
           id="partners-title"
           title="Employers who hire our graduates"

@@ -13,7 +13,7 @@ const mentorDuties = [
 
 export function About() {
   return (
-    <div className="mx-auto max-w-page px-5 py-14 md:px-8 md:py-20">
+    <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
       <header className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
         <div>
           <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">A place to learn a trade, close to home</h1>

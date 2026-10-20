@@ -4,7 +4,7 @@ import { sectors } from '../../data/sectors';
 export function SectorStrip() {
   return (
     <section aria-label="Fields you can study" className="border-y border-line">
-      <ul className="mx-auto grid max-w-page grid-cols-2 px-5 md:grid-cols-4 md:px-8">
+      <ul className="mx-auto grid max-w-page grid-cols-2 px-4 md:grid-cols-4 md:px-6">
         {sectors.map((sector) => {
           const Icon = sector.icon;
           return (

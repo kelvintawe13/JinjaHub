@@ -53,9 +53,9 @@ export function LearningSpace({ section }: {section: LearningSection;}) {
   const course = courses.find((c) => c.slug === application?.course);
 
   return (
-    <div className="mx-auto grid max-w-page gap-8 px-5 py-10 md:px-8 md:py-14 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-14">
+    <div className="mx-auto grid max-w-page gap-8 px-4 py-6 md:px-6 md:py-10 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-14">
       <nav aria-label="Learning space">
-        <ul className="-mx-5 flex gap-1 overflow-x-auto px-5 lg:mx-0 lg:flex-col lg:px-0">
+        <ul className="-mx-4 flex gap-1 overflow-x-auto px-4 lg:mx-0 lg:flex-col lg:px-0">
           {learningNav.map((item) =>
           <li key={item.to}>
               <NavLink
@@ -80,7 +80,7 @@ export function LearningSpace({ section }: {section: LearningSection;}) {
             <h1 className="text-2xl font-semibold tracking-tight md:text-3xl">Hi {firstName}</h1>
             {application ?
           <>
-                <section aria-labelledby="status-title" className="mt-8 rounded-3xl bg-paper p-6 ring-1 ring-line md:p-8">
+                <section aria-labelledby="status-title" className="mt-8 rounded-3xl bg-paper p-5 ring-1 ring-line md:p-7">
                   <p className="text-sm font-medium text-forest-dark">Application received</p>
                   <h2 id="status-title" className="mt-1 text-2xl font-semibold tracking-tight">
                     What happens next
@@ -114,7 +114,7 @@ export function LearningSpace({ section }: {section: LearningSection;}) {
                 </div>
               </> :
 
-          <section className="mt-8 rounded-2xl bg-ink p-8 text-paper">
+          <section className="mt-8 rounded-2xl bg-ink p-6 text-paper md:p-8">
                 <h2 className="text-2xl font-semibold">Finish your application</h2>
                 <p className="mt-2 max-w-md text-paper/75">It takes about 3 minutes. A mentor calls within 3 days of sending it.</p>
                 <ButtonLink to="/apply" glow className="mt-6">
@@ -172,7 +172,7 @@ export function LearningSpace({ section }: {section: LearningSection;}) {
 
 function EmptyState({ icon: Icon, title, body }: {icon: typeof UserRoundIcon;title: string;body: string;}) {
   return (
-    <div className="flex flex-col items-start rounded-3xl bg-paper p-8 ring-1 ring-line md:p-12">
+    <div className="flex flex-col items-start rounded-3xl bg-paper p-6 ring-1 ring-line md:p-10">
       <span className="grid h-12 w-12 place-items-center rounded-2xl bg-forest-soft text-forest-dark">
         <Icon className="h-6 w-6" aria-hidden="true" />
       </span>
