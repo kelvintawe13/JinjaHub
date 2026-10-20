@@ -38,7 +38,7 @@ export function Navbar() {
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
           {user ?
-          <ButtonLink to="/dashboard" size="sm">
+          <ButtonLink to="/dashboard" size="sm" glow>
               My learning space
             </ButtonLink> :
 
@@ -92,7 +92,7 @@ export function Navbar() {
                   <ButtonLink to="/sign-in" variant="secondary">
                     Sign in
                   </ButtonLink>
-                  <ButtonLink to="/sign-up">Get started</ButtonLink>
+                  <ButtonLink to="/sign-up" glow>Get started</ButtonLink>
                 </>
             }
             </div>

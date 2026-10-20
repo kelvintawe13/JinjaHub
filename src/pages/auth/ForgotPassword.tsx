@@ -56,7 +56,7 @@ export function ForgotPassword() {
           </Alert>
         }
         <FormField label="Phone or email" placeholder="0772 123 456" autoComplete="username" {...form.bind('identifier')} />
-        <Button type="submit" size="lg" fullWidth loading={loading} loadingText="Sending code…">
+        <Button type="submit" size="lg" fullWidth glow loading={loading} loadingText="Sending code…">
           Send code
         </Button>
       </form>

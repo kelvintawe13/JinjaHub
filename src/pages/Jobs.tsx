@@ -42,7 +42,7 @@ export function Jobs() {
             <p className="mt-3 text-base leading-relaxed text-paper/75">
               Open to any graduate. Most join after Start Your Business, but any course counts.
             </p>
-            <ButtonLink to="/courses/start-your-business" className="mt-6">
+            <ButtonLink to="/courses/start-your-business" glow className="mt-6">
               See Start Your Business
             </ButtonLink>
           </div>

@@ -25,7 +25,7 @@ export function JobsTeaser() {
           <p className="mb-6 mt-1.5 text-sm leading-relaxed text-paper/75">
             Coaching, a business plan and a pitch day for graduates who want to work for themselves.
           </p>
-          <ButtonLink to="/jobs#startup" variant="primary" className="mt-auto self-start" size="sm">
+          <ButtonLink to="/jobs#startup" variant="primary" glow className="mt-auto self-start" size="sm">
             How the track works
           </ButtonLink>
         </article>

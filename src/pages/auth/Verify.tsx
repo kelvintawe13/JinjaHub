@@ -44,7 +44,11 @@ export function Verify() {
     done.current = true;
     try {
       await confirmCode(value);
-      navigate(intent === 'new' ? '/apply' : state?.from ?? '/dashboard', { replace: true });
+      const next = intent === 'new' ? '/apply' : (state?.from ?? '/dashboard');
+      navigate(next, {
+        replace: true,
+        state: next === '/dashboard' ? { celebrate: true } : undefined,
+      });
     } catch (err) {
       done.current = false;
       setLoading(false);
@@ -137,7 +141,7 @@ export function Verify() {
           </div>
         </div>
 
-        <Button type="submit" size="lg" fullWidth loading={loading} loadingText="Checking…" disabled={attempts.locked}>
+        <Button type="submit" size="lg" fullWidth glow loading={loading} loadingText="Checking…" disabled={attempts.locked}>
           Verify
         </Button>
 

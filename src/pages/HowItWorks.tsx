@@ -39,7 +39,7 @@ export function HowItWorks() {
           <ButtonLink to="/courses" variant="secondary">
             Explore courses
           </ButtonLink>
-          <ButtonLink to="/apply">Apply now</ButtonLink>
+          <ButtonLink to="/apply" glow>Apply now</ButtonLink>
         </div>
       </div>
     </div>);

@@ -158,7 +158,7 @@ export function ResetPassword() {
         </div>
         <FormField label="New password" type="password" autoComplete="new-password" hint={PASSWORD_RULE} {...form.bind('password')} />
         <FormField label="Confirm new password" type="password" autoComplete="new-password" {...form.bind('confirm')} />
-        <Button type="submit" size="lg" fullWidth loading={loading} loadingText="Saving…" disabled={attempts.locked}>
+        <Button type="submit" size="lg" fullWidth glow loading={loading} loadingText="Saving…" disabled={attempts.locked}>
           Save new password
         </Button>
       </form>

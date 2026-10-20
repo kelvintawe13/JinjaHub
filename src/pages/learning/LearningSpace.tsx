@@ -1,8 +1,10 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { AwardIcon, BookOpenIcon, HandCoinsIcon, MessageCircleIcon, UserRoundIcon, LogOutIcon } from 'lucide-react';
 import { StatCard } from '../../components/cards/StatCard';
 import { ButtonLink } from '../../components/ui/ButtonLink';
 import { Button } from '../../components/ui/Button';
+import { Celebration } from '../../components/ui/Celebration';
 import { useAuth } from '../../hooks/useAuth';
 import { learningNav } from '../../data/navigation';
 import { applicationNextSteps } from '../../data/nextSteps';
@@ -33,6 +35,19 @@ const emptyStates: Record<'learning' | 'messages' | 'certificate', {icon: typeof
 export function LearningSpace({ section }: {section: LearningSection;}) {
   const { user, application, signOut } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+  // Flower celebration when the user just signed in / verified into their space.
+  const [celebrate, setCelebrate] = useState(false);
+
+  useEffect(() => {
+    if (location.state?.celebrate) {
+      setCelebrate(true);
+      // Clear the one-shot flag so refresh/back doesn't replay it.
+      navigate(location.pathname, { replace: true, state: null });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run once on mount
+  }, []);
+
   if (!user) return null;
   const firstName = user.name.split(' ')[0];
   const course = courses.find((c) => c.slug === application?.course);
@@ -102,7 +117,7 @@ export function LearningSpace({ section }: {section: LearningSection;}) {
           <section className="mt-8 rounded-2xl bg-ink p-8 text-paper">
                 <h2 className="text-2xl font-semibold">Finish your application</h2>
                 <p className="mt-2 max-w-md text-paper/75">It takes about 3 minutes. A mentor calls within 3 days of sending it.</p>
-                <ButtonLink to="/apply" className="mt-6">
+                <ButtonLink to="/apply" glow className="mt-6">
                   Continue application
                 </ButtonLink>
               </section>
@@ -144,6 +159,13 @@ export function LearningSpace({ section }: {section: LearningSection;}) {
           </>
         }
       </div>
+
+      <Celebration
+        show={celebrate}
+        onDone={() => setCelebrate(false)}
+        title={`Welcome to your space, ${firstName}!`}
+        message="Your course, mentor messages, and progress all live here."
+      />
     </div>);
 
 }

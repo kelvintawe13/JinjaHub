@@ -136,7 +136,7 @@ export function Contact() {
                   </p>
               }
               </div>
-              <Button type="submit" size="lg" loading={status === 'sending'} loadingText="Sending…">
+              <Button type="submit" size="lg" glow loading={status === 'sending'} loadingText="Sending…">
                 Send message
               </Button>
             </form>

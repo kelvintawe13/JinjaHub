@@ -42,7 +42,7 @@ export function SignIn() {
         navigate('/verify', { state: { intent: 'existing', from: state?.from } });
         return;
       }
-      navigate(state?.from ?? '/dashboard', { replace: true });
+      navigate(state?.from ?? '/dashboard', { replace: true, state: { celebrate: true } });
     } catch (err) {
       signingIn.current = false;
       setLoading(false);
