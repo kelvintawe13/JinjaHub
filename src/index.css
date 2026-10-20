@@ -12,6 +12,12 @@ body {
   @apply bg-canvas font-sans text-ink antialiased;
 }
 
+/* Kill accidental horizontal page scroll on narrow viewports while keeping sticky elements working. */
+html,
+body {
+  overflow-x: clip;
+}
+
 /* Line-clamp utility used by <ExpandableText />; line count comes from the --clamp-lines custom property. */
 .clamp-text {
   display: -webkit-box;

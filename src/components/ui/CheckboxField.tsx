@@ -22,7 +22,7 @@ export function CheckboxField({ id, checked, onChange, label, description, error
           onChange={(e) => onChange(e.target.checked)}
           aria-invalid={error ? true : undefined}
           aria-describedby={[descId, errorId].filter(Boolean).join(' ') || undefined}
-          className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer rounded border-ink/30 accent-forest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2" />
+          className="mt-0.5 h-6 w-6 shrink-0 cursor-pointer rounded border-ink/30 accent-forest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2" />
         
         <div>
           <label htmlFor={id} className="cursor-pointer text-sm leading-snug text-ink">

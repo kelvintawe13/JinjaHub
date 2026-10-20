@@ -19,7 +19,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-line bg-canvas/95 backdrop-blur">
       <nav aria-label="Main" className="mx-auto flex h-14 max-w-page items-center justify-between gap-6 px-5 md:px-8">
         <Logo />
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {mainNav.map((item) =>
           <li key={item.to}>
               <NavLink
@@ -36,7 +36,7 @@ export function Navbar() {
             </li>
           )}
         </ul>
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           {user ?
           <ButtonLink to="/dashboard" size="sm">
               My learning space
@@ -58,7 +58,7 @@ export function Navbar() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? 'Close menu' : 'Open menu'}
-          className="grid h-10 w-10 place-items-center rounded-lg text-ink hover:bg-ink/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest md:hidden">
+          className="grid h-11 w-11 place-items-center rounded-lg text-ink hover:bg-ink/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest lg:hidden">
           
           {open ? <XIcon className="h-5 w-5" /> : <MenuIcon className="h-5 w-5" />}
         </button>
@@ -71,7 +71,7 @@ export function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
-          className="border-t border-line bg-canvas px-5 pb-6 pt-2 md:hidden">
+          className="border-t border-line bg-canvas px-5 pb-6 pt-2 lg:hidden">
           
             <ul className="divide-y divide-line">
               {mainNav.map((item) =>

@@ -23,7 +23,7 @@ export function Chip({ children, selected = false, onClick, tone = 'neutral', cl
         onClick={onClick}
         aria-pressed={selected}
         className={cn(
-          'inline-flex h-8 items-center gap-1.5 whitespace-nowrap rounded-full border px-3.5 text-sm font-medium transition-[background-color,border-color,color] duration-150 ease-snappy focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-canvas',
+          'inline-flex min-h-10 items-center gap-1.5 whitespace-nowrap rounded-full border px-3.5 text-sm font-medium transition-[background-color,border-color,color] duration-150 ease-snappy focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-canvas',
           selected ? 'border-ink bg-ink text-paper' : 'border-line bg-paper text-ink hover:border-ink/30',
           className
         )}>

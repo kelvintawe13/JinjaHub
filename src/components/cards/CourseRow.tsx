@@ -6,9 +6,9 @@ export function CourseRow({ course }: {course: Course;}) {
   return (
     <Link
       to={`/courses/${course.slug}`}
-      className="group grid grid-cols-[128px_1fr_auto] items-center gap-6 rounded-2xl px-3 py-4 transition-colors duration-150 hover:bg-paper focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest">
-      
-      <img src={course.image} alt="" className="aspect-[4/3] w-32 rounded-xl object-cover" loading="lazy" />
+      className="group grid grid-cols-[88px_minmax(0,1fr)_auto] items-center gap-3 rounded-2xl px-2 py-4 transition-colors duration-150 hover:bg-paper focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest md:grid-cols-[128px_1fr_auto] md:gap-6 md:px-3">
+
+      <img src={course.image} alt="" className="aspect-[4/3] w-24 rounded-xl object-cover md:w-32" loading="lazy" />
       <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_1fr]">
         <div>
           <p className="text-sm text-muted">

@@ -12,9 +12,10 @@ const variants: Record<ButtonVariant, string> = {
 };
 
 const sizes: Record<ButtonSize, string> = {
-  sm: 'h-8 rounded-lg px-3 text-sm',
-  md: 'h-10 rounded-lg px-4 text-sm',
-  lg: 'h-11 rounded-lg px-5 text-base'
+  // min-h keeps touch targets >= 40px (sm) / 44px (md, lg) on mobile.
+  sm: 'min-h-10 rounded-lg px-3 text-sm',
+  md: 'min-h-11 rounded-lg px-4 text-sm',
+  lg: 'min-h-11 rounded-lg px-5 text-base'
 };
 
 interface ButtonClassOptions {

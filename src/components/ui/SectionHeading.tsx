@@ -24,7 +24,7 @@ export function SectionHeading({ id, title, intro, action, badge, className }: S
       {action &&
       <Link
         to={action.to}
-        className="group inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-md font-semibold text-ink underline decoration-ink/25 underline-offset-[6px] transition-[text-decoration-color] duration-150 hover:decoration-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest">
+        className="group -my-2 inline-flex items-center gap-1.5 whitespace-nowrap rounded-md py-2 font-semibold text-ink underline decoration-ink/25 underline-offset-[6px] transition-[text-decoration-color] duration-150 hover:decoration-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest">
         
           {action.label}
           <ArrowRightIcon className="h-4 w-4 transition-transform duration-150 ease-snappy group-hover:translate-x-0.5" aria-hidden="true" />
