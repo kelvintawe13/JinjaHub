@@ -1,4 +1,3 @@
-import React from 'react';
 import { Hero } from '../components/landing/Hero';
 import { SectorStrip } from '../components/landing/SectorStrip';
 import { FeatureGrid } from '../components/landing/FeatureGrid';

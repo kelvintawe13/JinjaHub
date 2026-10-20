@@ -1,11 +1,17 @@
-import React from 'react';
 import type { Story } from '../../types/content';
 import { PlaceholderTag } from '../ui/PlaceholderTag';
+import { ExpandableText } from '../ui/ExpandableText';
 
 export function QuoteCard({ story }: {story: Story;}) {
   return (
     <figure className="flex h-full flex-col rounded-3xl bg-paper p-6 ring-1 ring-line md:p-7">
-      <blockquote className="text-base leading-relaxed text-ink">“{story.quote}”</blockquote>
+      <blockquote className="text-base leading-relaxed text-ink">
+        <ExpandableText
+          text={`“${story.quote}”`}
+          lines={5}
+          smLines={8}
+        />
+      </blockquote>
       <figcaption className="mt-auto flex items-center gap-3 pt-6">
         <span
           className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-dashed border-ink/30 bg-sand/50 text-sm font-semibold text-muted"

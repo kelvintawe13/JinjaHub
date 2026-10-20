@@ -1,11 +1,10 @@
-import React from 'react';
 import { CheckIcon } from 'lucide-react';
 import { ButtonLink } from '../components/ui/ButtonLink';
 import { stages } from '../data/steps';
 
 export function HowItWorks() {
   return (
-    <div className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
+    <div className="mx-auto max-w-page px-5 py-14 md:px-8 md:py-20">
       <header className="max-w-2xl">
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">How it works</h1>
         <p className="mt-3 text-base leading-relaxed text-muted">

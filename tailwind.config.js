@@ -38,6 +38,11 @@ export default {
         '2xl': '12px',
         '3xl': '16px',
       },
+      maxWidth: {
+        // Full-width page shell: lets content span nearly the whole viewport
+        // instead of stopping at max-w-6xl (72rem), which left large side gaps.
+        page: '94rem',
+      },
       transitionTimingFunction: {
         snappy: 'cubic-bezier(0.23, 1, 0.32, 1)',
       },

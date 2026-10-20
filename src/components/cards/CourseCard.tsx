@@ -1,7 +1,7 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ClockIcon } from 'lucide-react';
 import { Chip } from '../ui/Chip';
+import { ExpandableText } from '../ui/ExpandableText';
 import type { Course } from '../../types/content';
 
 export function CourseCard({ course }: {course: Course;}) {
@@ -22,7 +22,12 @@ export function CourseCard({ course }: {course: Course;}) {
           </span>
         </div>
         <h3 className="mt-3 text-base font-semibold leading-snug">{course.title}</h3>
-        <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-muted">{course.summary}</p>
+        <ExpandableText
+          text={course.summary}
+          lines={3}
+          smLines={2}
+          className="mt-1.5 text-sm leading-relaxed text-muted"
+        />
         <p className="mt-auto border-t border-line pt-4 text-sm">
           <span className="text-muted">Leads to </span>
           <span className="font-medium text-ink">{course.leadsTo[0]}</span>

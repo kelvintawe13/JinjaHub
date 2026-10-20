@@ -1,4 +1,3 @@
-import React from 'react';
 import { QuoteCard } from '../cards/QuoteCard';
 import { SectionHeading } from '../ui/SectionHeading';
 import { PlaceholderTag } from '../ui/PlaceholderTag';
@@ -6,7 +5,7 @@ import { stories } from '../../data/stories';
 
 export function StoriesSection() {
   return (
-    <section aria-labelledby="stories-title" className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+    <section aria-labelledby="stories-title" className="mx-auto max-w-page px-5 py-20 md:px-8 md:py-28">
       <SectionHeading
         id="stories-title"
         title="In their words"

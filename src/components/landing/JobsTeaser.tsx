@@ -1,4 +1,3 @@
-import React from 'react';
 import { RocketIcon } from 'lucide-react';
 import { JobCard } from '../cards/JobCard';
 import { SectionHeading } from '../ui/SectionHeading';
@@ -7,7 +6,7 @@ import { jobs } from '../../data/jobs';
 
 export function JobsTeaser() {
   return (
-    <section aria-labelledby="jobs-title" className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+    <section aria-labelledby="jobs-title" className="mx-auto max-w-page px-5 py-20 md:px-8 md:py-28">
       <SectionHeading
         id="jobs-title"
         title="Where courses lead"

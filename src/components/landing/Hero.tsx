@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { AwardIcon, MessageCircleIcon } from 'lucide-react';
 import { ButtonLink } from '../ui/ButtonLink';
@@ -17,7 +16,7 @@ export function Hero() {
 
   return (
     <section aria-labelledby="hero-title" className="overflow-hidden">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 pb-16 pt-10 md:px-8 md:pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:pb-24">
+      <div className="mx-auto grid max-w-page items-center gap-14 px-5 pb-16 pt-10 md:px-8 md:pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:pb-24">
         <div>
           <Chip tone="forest" className="px-3 py-1">
             For ages 14 to 21 in Jinja

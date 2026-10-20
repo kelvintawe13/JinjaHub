@@ -52,7 +52,7 @@ export function Contact() {
   const { error: messageError, ...messageProps } = form.bind('message');
 
   return (
-    <div className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
+    <div className="mx-auto max-w-page px-5 py-14 md:px-8 md:py-20">
       <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
           <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">Talk to us</h1>

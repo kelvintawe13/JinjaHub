@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { BriefcaseIcon, MapPinIcon } from 'lucide-react';
 import type { Job } from '../../types/content';

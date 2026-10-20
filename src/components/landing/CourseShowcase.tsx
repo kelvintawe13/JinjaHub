@@ -1,4 +1,3 @@
-import React from 'react';
 import { CourseCard } from '../cards/CourseCard';
 import { CourseRow } from '../cards/CourseRow';
 import { SectionHeading } from '../ui/SectionHeading';
@@ -11,7 +10,7 @@ export function CourseShowcase({ layout }: {layout: CourseShowcaseLayout;}) {
   const featured = courses.filter((c) => c.featured);
 
   return (
-    <section id="courses" aria-labelledby="courses-title" className="mx-auto max-w-6xl scroll-mt-16 px-5 py-20 md:px-8 md:py-28">
+    <section id="courses" aria-labelledby="courses-title" className="mx-auto max-w-page scroll-mt-16 px-5 py-20 md:px-8 md:py-28">
       <SectionHeading
         id="courses-title"
         title="One course in each field"

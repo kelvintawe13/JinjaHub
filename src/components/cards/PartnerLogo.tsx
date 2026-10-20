@@ -1,4 +1,3 @@
-import React from 'react';
 import { BuildingIcon } from 'lucide-react';
 
 export function PartnerLogo({ name }: {name?: string;}) {

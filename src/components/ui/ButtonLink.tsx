@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, LinkProps } from 'react-router-dom';
 import { buttonClasses, ButtonSize, ButtonVariant } from '../../utils/buttonStyles';
 

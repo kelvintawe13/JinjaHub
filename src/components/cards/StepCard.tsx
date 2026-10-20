@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Step } from '../../types/content';
 
 export function StepCard({ step, index }: {step: Step;index: number;}) {

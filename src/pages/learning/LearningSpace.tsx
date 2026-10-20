@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AwardIcon, BookOpenIcon, HandCoinsIcon, MessageCircleIcon, UserRoundIcon, LogOutIcon } from 'lucide-react';
 import { StatCard } from '../../components/cards/StatCard';
@@ -39,7 +38,7 @@ export function LearningSpace({ section }: {section: LearningSection;}) {
   const course = courses.find((c) => c.slug === application?.course);
 
   return (
-    <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 md:px-8 md:py-14 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-14">
+    <div className="mx-auto grid max-w-page gap-8 px-5 py-10 md:px-8 md:py-14 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-14">
       <nav aria-label="Learning space">
         <ul className="-mx-5 flex gap-1 overflow-x-auto px-5 lg:mx-0 lg:flex-col lg:px-0">
           {learningNav.map((item) =>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { JobCard } from '../components/cards/JobCard';
 import { ButtonLink } from '../components/ui/ButtonLink';
 import { PlaceholderTag } from '../components/ui/PlaceholderTag';
@@ -12,7 +11,7 @@ const trackSteps = [
 
 export function Jobs() {
   return (
-    <div className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
+    <div className="mx-auto max-w-page px-5 py-14 md:px-8 md:py-20">
       <header className="max-w-2xl">
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">Jobs and the start-up track</h1>
         <p className="mt-3 text-base leading-relaxed text-muted">

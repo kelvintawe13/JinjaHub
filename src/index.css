@@ -11,6 +11,15 @@
 body {
   @apply bg-canvas font-sans text-ink antialiased;
 }
+
+/* Line-clamp utility used by <ExpandableText />; line count comes from the --clamp-lines custom property. */
+.clamp-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--clamp-lines, 3);
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -1,4 +1,3 @@
-import React from 'react';
 import { AlertCircleIcon } from 'lucide-react';
 
 interface CheckboxFieldProps {

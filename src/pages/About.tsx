@@ -1,4 +1,3 @@
-import React from 'react';
 import { ClockIcon, MapPinIcon, MessageCircleIcon, PhoneCallIcon, UsersIcon } from 'lucide-react';
 import { PartnerLogo } from '../components/cards/PartnerLogo';
 import { ButtonLink } from '../components/ui/ButtonLink';
@@ -14,7 +13,7 @@ const mentorDuties = [
 
 export function About() {
   return (
-    <div className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
+    <div className="mx-auto max-w-page px-5 py-14 md:px-8 md:py-20">
       <header className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
         <div>
           <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">A place to learn a trade, close to home</h1>

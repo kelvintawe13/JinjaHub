@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { AlertTriangleIcon, CheckCircle2Icon, InfoIcon } from 'lucide-react';
 import { cn } from '../../utils/cn';

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { AlertCircleIcon } from 'lucide-react';
 import { AuthLayout } from '../../components/auth/AuthLayout';

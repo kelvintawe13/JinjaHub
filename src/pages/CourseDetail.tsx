@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeftIcon, BriefcaseIcon, CalendarDaysIcon, ClockIcon, HandCoinsIcon, MapPinIcon } from 'lucide-react';
 import { Chip } from '../components/ui/Chip';
@@ -19,7 +18,7 @@ export function CourseDetail() {
 
 
   return (
-    <div className="mx-auto max-w-6xl px-5 py-10 md:px-8 md:py-14">
+    <div className="mx-auto max-w-page px-5 py-10 md:px-8 md:py-14">
       <Link
         to="/courses"
         className="inline-flex items-center gap-1.5 rounded text-sm font-medium text-muted hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest">

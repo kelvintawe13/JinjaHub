@@ -1,10 +1,9 @@
-import React from "react";
 import { BoxIcon } from "lucide-react";
 interface StatCardProps {
   label: string;
   value: string;
   hint?: string;
-  icon: BoxIcon;
+  icon: typeof BoxIcon;
 }
 export function StatCard({
   label,

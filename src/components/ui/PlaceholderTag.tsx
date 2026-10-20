@@ -1,4 +1,3 @@
-import React from 'react';
 
 export function PlaceholderTag({ label = 'Placeholder' }: {label?: string;}) {
   return (

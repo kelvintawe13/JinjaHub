@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { MenuIcon, XIcon } from 'lucide-react';
@@ -17,7 +17,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-canvas/95 backdrop-blur">
-      <nav aria-label="Main" className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-6 px-5 md:px-8">
+      <nav aria-label="Main" className="mx-auto flex h-14 max-w-page items-center justify-between gap-6 px-5 md:px-8">
         <Logo />
         <ul className="hidden items-center gap-1 md:flex">
           {mainNav.map((item) =>

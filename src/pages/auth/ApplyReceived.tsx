@@ -1,4 +1,3 @@
-import React from 'react';
 import { AuthLayout } from '../../components/auth/AuthLayout';
 import { ButtonLink } from '../../components/ui/ButtonLink';
 import { useAuth } from '../../hooks/useAuth';
