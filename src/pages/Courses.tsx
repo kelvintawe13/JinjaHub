@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { SearchXIcon } from 'lucide-react';
+import { ClockIcon, SearchXIcon } from 'lucide-react';
 import { CourseCard } from '../components/cards/CourseCard';
 import { Chip } from '../components/ui/Chip';
 import { Button } from '../components/ui/Button';
@@ -12,8 +12,8 @@ type LengthFilter = 'all' | 'short' | 'long';
 
 const lengthOptions: {value: LengthFilter;label: string;}[] = [
 { value: 'all', label: 'Any length' },
-{ value: 'short', label: '8 weeks or less' },
-{ value: 'long', label: 'Over 8 weeks' }];
+{ value: 'short', label: 'Up to 8 months' },
+{ value: 'long', label: '9–12 months' }];
 
 
 export function Courses() {
@@ -25,7 +25,7 @@ export function Courses() {
   const results = courses.filter(
     (c) =>
     (!cat || c.category === cat) && (
-    length === 'all' || (length === 'short' ? c.weeks <= 8 : c.weeks > 8))
+    length === 'all' || (length === 'short' ? c.months <= 8 : c.months > 8))
   );
 
   function setCategory(id: SectorId | null) {
@@ -43,9 +43,13 @@ export function Courses() {
   return (
     <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
       <header className="max-w-2xl">
-        <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">All courses</h1>
+        <Chip tone="peach" className="px-3.5 py-1.5 text-sm">
+          <ClockIcon className="h-4 w-4" aria-hidden="true" />
+          Every course runs 6–12 months
+        </Chip>
+        <h1 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">All courses</h1>
         <p className="mt-3 text-base leading-relaxed text-muted">
-          Practical courses of 6 to 12 weeks. Each one shows the work it leads to, and none of them need an entry exam.
+          Practical courses of 6 to 12 months, with sessions that fit around other work. Each one shows the work it leads to, and none of them need an entry exam.
         </p>
       </header>
 

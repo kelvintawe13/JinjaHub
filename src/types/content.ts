@@ -15,7 +15,7 @@ export interface Course {
   category: SectorId;
   categoryLabel: string;
   duration: string;
-  weeks: number;
+  months: number;
   schedule: string;
   summary: string;
   leadsTo: string[];

@@ -4,14 +4,16 @@ interface ChipProps {
   children: React.ReactNode;
   selected?: boolean;
   onClick?: () => void;
-  tone?: 'neutral' | 'forest' | 'sand';
+  tone?: 'neutral' | 'forest' | 'sand' | 'peach' | 'leaf';
   className?: string;
 }
 
 const tagTones = {
   neutral: 'bg-ink/[0.06] text-ink',
   forest: 'bg-forest-soft text-forest-dark',
-  sand: 'bg-sand text-ink'
+  sand: 'bg-sand text-ink',
+  peach: 'bg-peach text-ink',
+  leaf: 'bg-leaf-soft text-leaf-dark'
 };
 
 /** Filter chip when `onClick` is given, otherwise a static tag. */

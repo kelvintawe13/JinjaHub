@@ -9,6 +9,8 @@ import { CourseDetail } from './pages/CourseDetail';
 import { HowItWorks } from './pages/HowItWorks';
 import { Jobs } from './pages/Jobs';
 import { About } from './pages/About';
+import { Mentors } from './pages/Mentors';
+import { Founder } from './pages/Founder';
 import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
 import { LearningSpace } from './pages/learning/LearningSpace';
@@ -37,6 +39,8 @@ export function App({ courseShowcase = 'rows' }: AppProps) {
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/about" element={<About />} />
+            <Route path="/mentors" element={<Mentors />} />
+            <Route path="/founder" element={<Founder />} />
             <Route path="/contact" element={<Contact />} />
             <Route element={<RequireAuth />}>
               <Route path="/dashboard" element={<LearningSpace section="dashboard" />} />

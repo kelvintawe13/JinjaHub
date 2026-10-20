@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" role="img" aria-label="Illustrated portrait of Lele Aliga Norah">
+  <rect width="600" height="720" fill="#FBF6EC"/>
+  <g stroke="#1A1A1A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- backdrop -->
+    <circle cx="300" cy="330" r="238" fill="#F8E3C4" stroke="none"/>
+    <!-- leaves along the circle edge, lower left -->
+    <path d="M96 470 C88 440 92 414 108 394" fill="none" stroke-width="5"/>
+    <path d="M104 402 Q78 388 78 362 Q102 372 104 402 Z" fill="#2F6B47"/>
+    <path d="M116 436 Q140 424 148 396 Q120 404 116 436 Z" fill="#2F6B47"/>
+    <!-- leaves along the circle edge, lower right -->
+    <path d="M504 470 C512 440 508 414 492 394" fill="none" stroke-width="5"/>
+    <path d="M496 402 Q522 388 522 362 Q498 372 496 402 Z" fill="#2F6B47"/>
+    <path d="M484 436 Q460 424 452 396 Q480 404 484 436 Z" fill="#2F6B47"/>
+    <!-- torso: green blazer -->
+    <path d="M300 496 L238 496 C158 526 104 592 96 720 L504 720 C496 592 442 526 362 496 Z" fill="#2F6B47"/>
+    <!-- blouse in the V-neck -->
+    <polygon points="268,492 332,492 300,556" fill="#FBF6EC"/>
+    <!-- necklace -->
+    <path d="M262 502 Q300 546 338 502" fill="none" stroke="#E2A93B" stroke-width="5"/>
+    <circle cx="300" cy="540" r="10" fill="#E2A93B" stroke-width="5"/>
+    <!-- neck -->
+    <path d="M268 380 L332 380 L332 500 L268 500 Z" fill="#EFB58C"/>
+    <line x1="268" y1="440" x2="268" y2="500" stroke-width="5"/>
+    <line x1="332" y1="440" x2="332" y2="500" stroke-width="5"/>
+    <!-- blazer lapels -->
+    <path d="M262 472 L268 540" fill="none" stroke-width="4.5"/>
+    <path d="M338 472 L332 540" fill="none" stroke-width="4.5"/>
+    <!-- ears -->
+    <circle cx="208" cy="330" r="16" fill="#EFB58C"/>
+    <circle cx="392" cy="330" r="16" fill="#EFB58C"/>
+    <!-- earrings -->
+    <circle cx="208" cy="358" r="11" fill="#F76707" stroke-width="5"/>
+    <circle cx="392" cy="358" r="11" fill="#F76707" stroke-width="5"/>
+    <!-- head -->
+    <ellipse cx="300" cy="312" rx="88" ry="100" fill="#EFB58C"/>
+    <!-- hair: soft afro -->
+    <path d="M196 340 C168 184 228 108 300 106 C372 108 432 184 404 340 C402 244 370 212 300 208 C230 212 198 244 196 340 Z" fill="#241F1B"/>
+    <!-- eyebrows -->
+    <path d="M243 298 Q258 289 276 295" fill="none" stroke-width="5"/>
+    <path d="M324 295 Q342 289 357 298" fill="none" stroke-width="5"/>
+    <!-- eyes -->
+    <ellipse cx="260" cy="316" rx="4.5" ry="6" fill="#1A1A1A" stroke="none"/>
+    <ellipse cx="340" cy="316" rx="4.5" ry="6" fill="#1A1A1A" stroke="none"/>
+    <!-- nose -->
+    <path d="M300 318 C297 336 295 348 289 356 Q297 363 306 359" fill="none" stroke-width="4.5"/>
+    <!-- lips -->
+    <path d="M276 386 Q288 378 300 384 Q312 378 324 386 Q300 404 276 386 Z" fill="#C96F4E" stroke-width="4"/>
+  </g>
+</svg>

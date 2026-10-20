@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Open ledger with calculator, coins and receipt under a market awning">
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- scalloped awning -->
+    <rect x="230" y="84" width="740" height="62" fill="#FFFFFF"/>
+    <path d="M252 146 a45 45 0 0 0 90 0" fill="#F76707"/>
+    <path d="M342 146 a45 45 0 0 0 90 0" fill="#F0F0F0"/>
+    <path d="M432 146 a45 45 0 0 0 90 0" fill="#F76707"/>
+    <path d="M522 146 a45 45 0 0 0 90 0" fill="#F0F0F0"/>
+    <path d="M612 146 a45 45 0 0 0 90 0" fill="#F76707"/>
+    <path d="M702 146 a45 45 0 0 0 90 0" fill="#F0F0F0"/>
+    <path d="M792 146 a45 45 0 0 0 90 0" fill="#F76707"/>
+    <path d="M882 146 a45 45 0 0 0 90 0" fill="#F0F0F0"/>
+    <line x1="230" y1="146" x2="970" y2="146" stroke-width="5"/>
+    <ellipse cx="600" cy="772" rx="360" ry="14" fill="#EFEFEF" stroke="none"/>
+    <!-- open ledger -->
+    <polygon points="340,478 596,446 596,646 344,664" fill="#FFFFFF"/>
+    <polygon points="656,446 862,478 858,664 604,646" fill="#F0F0F0"/>
+    <line x1="596" y1="446" x2="604" y2="646" stroke-width="5"/>
+    <line x1="376" y1="508" x2="560" y2="486" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="378" y1="544" x2="562" y2="522" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="380" y1="580" x2="564" y2="558" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="382" y1="616" x2="566" y2="594" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="640" y1="486" x2="826" y2="510" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="638" y1="522" x2="824" y2="546" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="636" y1="558" x2="822" y2="582" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="634" y1="594" x2="820" y2="618" stroke="#BDBDBD" stroke-width="4"/>
+    <circle cx="548" cy="486" r="6" fill="#F76707" stroke="none"/>
+    <circle cx="546" cy="522" r="6" fill="#F76707" stroke="none"/>
+    <circle cx="544" cy="558" r="6" fill="#F76707" stroke="none"/>
+    <circle cx="676" cy="510" r="6" fill="#F76707" stroke="none"/>
+    <circle cx="674" cy="546" r="6" fill="#F76707" stroke="none"/>
+    <!-- pencil, resting on the calculator -->
+    <g transform="rotate(8 300 440)">
+      <rect x="200" y="428" width="170" height="24" rx="6" fill="#F79A5C"/>
+      <polygon points="370,428 410,440 370,452" fill="#F0F0F0"/>
+      <polygon points="400,437 410,440 400,443" fill="#1A1A1A" stroke="none"/>
+      <rect x="186" y="424" width="16" height="32" rx="4" fill="#F76707"/>
+    </g>
+    <!-- calculator -->
+    <rect x="196" y="470" width="212" height="280" rx="22" fill="#F0F0F0"/>
+    <rect x="226" y="502" width="152" height="58" rx="8" fill="#FFFFFF"/>
+    <rect x="242" y="526" width="72" height="10" fill="#F76707" stroke="none"/>
+    <circle cx="238" cy="606" r="15" fill="#FFFFFF" stroke-width="5"/>
+    <circle cx="302" cy="606" r="15" fill="#FFFFFF" stroke-width="5"/>
+    <circle cx="366" cy="606" r="15" fill="#FFFFFF" stroke-width="5"/>
+    <circle cx="238" cy="662" r="15" fill="#FFFFFF" stroke-width="5"/>
+    <circle cx="302" cy="662" r="15" fill="#FFFFFF" stroke-width="5"/>
+    <circle cx="366" cy="662" r="15" fill="#E2A93B" stroke-width="5"/>
+    <circle cx="238" cy="714" r="15" fill="#FFFFFF" stroke-width="5"/>
+    <circle cx="302" cy="714" r="15" fill="#FFFFFF" stroke-width="5"/>
+    <!-- receipt -->
+    <polygon points="700,300 856,300 856,470 826,454 796,470 766,454 736,470 700,470" fill="#FFFFFF"/>
+    <line x1="724" y1="336" x2="832" y2="336" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="724" y1="368" x2="832" y2="368" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="724" y1="400" x2="792" y2="400" stroke="#BDBDBD" stroke-width="4"/>
+    <circle cx="820" cy="428" r="5" fill="#F76707" stroke="none"/>
+    <!-- coins -->
+    <ellipse cx="960" cy="700" rx="62" ry="20" fill="#F8E3C4"/>
+    <ellipse cx="960" cy="668" rx="62" ry="20" fill="#F8E3C4"/>
+    <ellipse cx="960" cy="636" rx="62" ry="20" fill="#F8E3C4"/>
+    <ellipse cx="960" cy="586" rx="62" ry="20" fill="#E2A93B"/>
+    <circle cx="1072" cy="712" r="28" fill="#F8E3C4"/>
+    <circle cx="1072" cy="712" r="16" fill="none" stroke-width="4"/>
+    <!-- sprig -->
+    <path d="M120 760 C132 706 128 668 118 636" fill="none"/>
+    <path d="M122 646 Q100 620 106 596 Q128 614 122 646 Z" fill="#2F6B47"/>
+    <path d="M132 668 Q154 644 150 622 Q130 638 132 668 Z" fill="#2F6B47"/>
+  </g>
+</svg>

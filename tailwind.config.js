@@ -16,6 +16,12 @@ export default {
         // Neutral surface: light grey for secondary buttons and quiet section backgrounds.
         sand: { DEFAULT: '#F3F3F3', dark: '#E8E8E8' },
         danger: { DEFAULT: '#B42318', soft: '#FDECEA' },
+        // Botanical palette (from the approved mobile design): deep green, cream,
+        // peach and gold used for section tints, highlight chips and illustrations.
+        leaf: { DEFAULT: '#2F6B47', dark: '#1F4A32', soft: '#E9F1E7' },
+        cream: '#FBF6EC',
+        peach: { DEFAULT: '#F8E3C4', dark: '#E7BE85' },
+        gold: { DEFAULT: '#E2A93B', soft: '#F8EED3' },
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],

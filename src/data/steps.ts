@@ -3,7 +3,7 @@ import type { Stage, Step } from '../types/content';
 export const landingSteps: Step[] = [
 { id: 'discover', title: 'Discover', body: 'Look through four fields and see where each course leads before you choose.' },
 { id: 'choose', title: 'Choose', body: 'Pick a course that fits your time. Most run two or three sessions a week.' },
-{ id: 'apply', title: 'Apply', body: 'A short form, about 3 minutes. No exam. A mentor calls within 3 days.' },
+{ id: 'apply', title: 'Apply', body: 'A short form, about 3 minutes. No exam. We secure your course and a mentor calls within 3 days.' },
 { id: 'hired', title: 'Get hired', body: 'Finish, share your certificate, and we connect you with openings or the start-up track.' }];
 
 
@@ -29,12 +29,12 @@ export const stages: Stage[] = [
 },
 {
   id: 'apply',
-  title: 'Apply and meet your mentor',
-  summary: 'Three minutes online, then a real person calls you.',
+  title: 'Apply, secure your course and meet your mentor',
+  summary: 'Three steps in one, and a real person guides you through all of them.',
   details: [
-  'Share your name, age, phone and the last class you completed. No exam.',
-  'Tick "I need help paying fees" if cost could stop you.',
-  'A mentor calls within 3 days, then you come for a short orientation at the hub.']
+  'Apply: a short form, about 3 minutes. Share your name, age, phone and the last class you completed. No exam.',
+  'Secure your course: we confirm your seat and your sessions. Tick "I need help paying fees" if cost could stop you.',
+  'Meet your mentor: a mentor calls within 3 days, then you come for a short orientation at the hub.']
 
 },
 {

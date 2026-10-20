@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Phone with social post, megaphone and rising chart">
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- phone -->
+    <rect x="440" y="110" width="330" height="624" rx="42" fill="#FFFFFF"/>
+    <rect x="470" y="164" width="270" height="516" rx="22" fill="#F0F0F0"/>
+    <!-- profile row -->
+    <circle cx="528" cy="226" r="32" fill="#E5E5E5"/>
+    <path d="M584 212 H716" stroke="#BDBDBD" stroke-width="5"/>
+    <path d="M584 240 H668" stroke="#BDBDBD" stroke-width="5"/>
+    <!-- post card -->
+    <rect x="498" y="284" width="214" height="152" fill="#FFFFFF"/>
+    <circle cx="546" cy="332" r="16" fill="#F79A5C"/>
+    <polygon points="500,436 566,368 640,436" fill="#E5E5E5" stroke="none"/>
+    <polygon points="612,436 662,380 712,436" fill="#2F6B47" stroke="none"/>
+    <!-- like / comment / share -->
+    <path d="M528 486 C520 478 508 480 508 492 C508 502 528 512 528 512 C528 512 548 502 548 492 C548 480 536 478 528 486 Z" fill="#F76707" stroke-width="5"/>
+    <circle cx="590" cy="494" r="18" fill="#E5E5E5" stroke-width="5"/>
+    <circle cx="584" cy="492" r="3" fill="#1A1A1A" stroke="none"/>
+    <circle cx="594" cy="492" r="3" fill="#1A1A1A" stroke="none"/>
+    <path d="M648 476 L676 494 L648 512 L652 494 Z" fill="#CFCFCF" stroke-width="4"/>
+    <path d="M528 540 H680" stroke="#BDBDBD" stroke-width="5"/>
+    <path d="M528 584 H640" stroke="#BDBDBD" stroke-width="5"/>
+    <!-- reaction bubble -->
+    <circle cx="948" cy="222" r="58" fill="#F76707"/>
+    <path d="M922 274 L906 308 L948 286" fill="#F76707"/>
+    <path d="M948 230 C940 222 928 224 928 236 C928 246 948 258 948 258 C948 258 968 246 968 236 C968 224 956 222 948 230 Z" fill="#FFFFFF" stroke-width="5"/>
+    <!-- follow badge -->
+    <circle cx="980" cy="416" r="44" fill="#E2A93B"/>
+    <line x1="980" y1="398" x2="980" y2="434" stroke="#FFFFFF" stroke-width="7"/>
+    <line x1="962" y1="416" x2="998" y2="416" stroke="#FFFFFF" stroke-width="7"/>
+    <!-- megaphone -->
+    <polygon points="196,646 402,556 402,722 196,664" fill="#F76707"/>
+    <rect x="140" y="622" width="56" height="66" rx="14" fill="#E5E5E5"/>
+    <rect x="256" y="716" width="34" height="52" rx="10" fill="#E5E5E5"/>
+    <path d="M448 594 Q478 640 448 688" fill="none" stroke-width="6"/>
+    <path d="M488 574 Q530 640 488 708" fill="none" stroke-width="6"/>
+    <!-- chart card -->
+    <rect x="620" y="640" width="330" height="170" rx="18" fill="#FFFFFF"/>
+    <rect x="672" y="722" width="40" height="60" fill="#E5E5E5" stroke-width="5"/>
+    <rect x="740" y="694" width="40" height="88" fill="#E5E5E5" stroke-width="5"/>
+    <rect x="808" y="668" width="40" height="114" fill="#F79A5C" stroke-width="5"/>
+    <path d="M668 700 L760 662 L828 636 L886 618" fill="none" stroke-width="6"/>
+    <polygon points="894,612 874,610 884,632" fill="#1A1A1A" stroke="none"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Reception desk with service bell, laptop and keys">
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ground -->
+    <path d="M130 780 H1080" stroke="#E8E8E8" stroke-width="5"/>
+    <ellipse cx="520" cy="766" rx="330" ry="16" fill="#EFEFEF" stroke="none"/>
+    <!-- key board -->
+    <rect x="170" y="110" width="280" height="170" fill="#F0F0F0"/>
+    <circle cx="248" cy="160" r="9" fill="#FFFFFF"/>
+    <circle cx="316" cy="160" r="9" fill="#FFFFFF"/>
+    <circle cx="384" cy="160" r="9" fill="#FFFFFF"/>
+    <circle cx="248" cy="212" r="14" fill="none" stroke="#F76707" stroke-width="6"/>
+    <line x1="248" y1="226" x2="248" y2="252"/>
+    <line x1="248" y1="246" x2="262" y2="246" stroke-width="5"/>
+    <circle cx="316" cy="206" r="14" fill="none" stroke="#E2A93B" stroke-width="6"/>
+    <line x1="316" y1="220" x2="316" y2="244"/>
+    <line x1="316" y1="238" x2="330" y2="238" stroke-width="5"/>
+    <!-- pendant lamp -->
+    <line x1="740" y1="0" x2="740" y2="112"/>
+    <polygon points="692,112 788,112 770,184 710,184" fill="#F76707"/>
+    <path d="M712 204 H768" stroke-width="5"/>
+    <!-- countertop -->
+    <rect x="150" y="388" width="660" height="46" fill="#F0F0F0"/>
+    <rect x="196" y="434" width="530" height="290" fill="#E5E5E5"/>
+    <line x1="196" y1="470" x2="726" y2="470" stroke="#CFCFCF" stroke-width="5"/>
+    <!-- bell -->
+    <path d="M244 386 Q284 318 324 386" fill="#E2A93B"/>
+    <circle cx="284" cy="342" r="7" fill="#1A1A1A"/>
+    <path d="M232 386 H336" stroke-width="5"/>
+    <!-- laptop -->
+    <rect x="472" y="248" width="164" height="116" rx="10" fill="#FFFFFF"/>
+    <circle cx="554" cy="306" r="7" fill="#F76707" stroke="none"/>
+    <rect x="452" y="364" width="204" height="14" rx="7" fill="#E5E5E5"/>
+    <!-- guest book -->
+    <rect x="672" y="344" width="112" height="40" rx="6" fill="#FFFFFF"/>
+    <line x1="694" y1="358" x2="764" y2="358" stroke="#BDBDBD" stroke-width="4"/>
+    <line x1="694" y1="370" x2="748" y2="370" stroke="#BDBDBD" stroke-width="4"/>
+    <!-- plant -->
+    <polygon points="874,640 992,640 962,752 904,752" fill="#F79A5C"/>
+    <path d="M928 640 C918 570 902 538 878 512" fill="none"/>
+    <path d="M940 640 C948 566 966 534 992 510" fill="none"/>
+    <path d="M934 640 C932 586 934 552 934 522" fill="none"/>
+    <path d="M882 520 Q856 496 864 470 Q890 486 882 520 Z" fill="#2F6B47"/>
+    <path d="M990 518 Q1010 490 1004 464 Q980 482 990 518 Z" fill="#2F6B47"/>
+    <path d="M934 530 Q914 506 922 482 Q948 500 934 530 Z" fill="#2F6B47"/>
+    <!-- floor mat -->
+    <path d="M300 780 H760" stroke="#D9D9D9" stroke-width="5"/>
+  </g>
+</svg>

@@ -28,5 +28,5 @@ export const faqs: Faq[] = [
   id: 'how-long',
   question: 'How long does it take?',
   answer:
-  'Courses run from 6 to 12 weeks, with two or three sessions a week. Each course page shows its exact length and schedule.'
+  'Courses run from 6 to 12 months, with two or three sessions a week. Each course page shows its exact length and schedule.'
 }];

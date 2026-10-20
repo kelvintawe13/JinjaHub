@@ -14,12 +14,12 @@ export function CourseCard({ course }: {course: Course;}) {
         <img src={course.image} alt="" className="h-full w-full object-cover" loading="lazy" />
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <div className="flex flex-wrap items-center gap-2 text-sm text-muted">
+        <div className="flex flex-wrap items-center gap-2">
           <Chip tone="forest">{course.categoryLabel}</Chip>
-          <span className="inline-flex items-center gap-1">
+          <Chip tone="peach">
             <ClockIcon className="h-3.5 w-3.5" aria-hidden="true" />
             {course.duration}
-          </span>
+          </Chip>
         </div>
         <h3 className="mt-3 text-base font-semibold leading-snug">{course.title}</h3>
         <ExpandableText

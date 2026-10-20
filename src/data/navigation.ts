@@ -4,7 +4,7 @@ export const mainNav: NavItem[] = [
 { label: 'Courses', to: '/courses' },
 { label: 'How it works', to: '/how-it-works' },
 { label: 'Jobs', to: '/jobs' },
-{ label: 'Mentors', to: '/about#mentors' }];
+{ label: 'About', to: '/about' }];
 
 
 export const footerNav: {title: string;links: NavItem[];}[] = [
@@ -28,7 +28,8 @@ export const footerNav: {title: string;links: NavItem[];}[] = [
   title: 'The hub',
   links: [
   { label: 'About', to: '/about' },
-  { label: 'Mentors', to: '/about#mentors' },
+  { label: 'Mentors', to: '/mentors' },
+  { label: 'Our founder', to: '/founder' },
   { label: 'Contact', to: '/contact' }]
 
 }];

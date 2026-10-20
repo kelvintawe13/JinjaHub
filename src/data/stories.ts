@@ -10,7 +10,7 @@ export const stories: Story[] = [
 },
 {
   id: 'story-2',
-  quote: 'I had never used a computer. Eight weeks later I was typing reports for a SACCO office.',
+  quote: 'I had never used a computer. Eight months later I was typing reports for a SACCO office.',
   name: 'Learner name',
   detail: 'Computer Essentials',
   initials: 'CE'
