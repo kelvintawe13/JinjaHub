@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Jinja Edu-Hub sprout mark">
+  <!-- Brand tile: forest accent (#F76707), ink sprout (#111111) — matches Logo.tsx -->
+  <rect width="32" height="32" rx="7.2" fill="#F76707"/>
+  <g transform="translate(4 4)" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- stem -->
+    <path d="M12 21v-8"/>
+    <!-- right leaf -->
+    <path d="M12 13c0-3.3 2.2-5.5 5.5-5.5 0 3.3-2.2 5.5-5.5 5.5Z" fill="#111111"/>
+    <!-- left leaf -->
+    <path d="M12 13c0-3.3-2.2-5.5-5.5-5.5 0 3.3 2.2 5.5 5.5 5.5Z" fill="#111111"/>
+    <!-- grounded soil line -->
+    <path d="M7.5 21h9"/>
+  </g>
+</svg>
