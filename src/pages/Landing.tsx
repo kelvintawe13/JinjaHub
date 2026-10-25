@@ -2,6 +2,7 @@ import { Hero } from '../components/landing/Hero';
 import { SectorStrip } from '../components/landing/SectorStrip';
 import { FeatureGrid } from '../components/landing/FeatureGrid';
 import { HowItWorksSection } from '../components/landing/HowItWorksSection';
+import { HubLifeSection } from '../components/landing/HubLifeSection';
 import { CourseShowcase, CourseShowcaseLayout } from '../components/landing/CourseShowcase';
 import { StoriesSection } from '../components/landing/StoriesSection';
 import { PartnersSection } from '../components/landing/PartnersSection';
@@ -16,6 +17,7 @@ export function Landing({ courseShowcase }: {courseShowcase: CourseShowcaseLayou
       <SectorStrip />
       <FeatureGrid />
       <HowItWorksSection />
+      <HubLifeSection />
       <CourseShowcase layout={courseShowcase} />
       <StoriesSection />
       <PartnersSection />

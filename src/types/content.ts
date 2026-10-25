@@ -33,6 +33,13 @@ export interface Feature {
   link?: {label: string;to: string;};
 }
 
+export interface HubPerk {
+  id: string;
+  title: string;
+  body: string;
+  icon: LucideIcon;
+}
+
 export interface Step {
   id: string;
   title: string;
@@ -68,6 +75,8 @@ export interface Story {
   name: string;
   detail: string;
   initials: string;
+  year: string;
+  courseSlug: string;
 }
 
 export interface NavItem {
