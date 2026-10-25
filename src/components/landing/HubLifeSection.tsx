@@ -10,6 +10,7 @@ export function HubLifeSection() {
         id="hub-life-title"
         title="Life at the hub"
         intro="Learning is only part of the day. We make sure you are fed, equipped and part of a team."
+        action={{ label: 'Step inside the hub', to: '/life' }}
         badge={<Chip tone="forest" className="px-3 py-1">Inside the hub</Chip>} />
       
 

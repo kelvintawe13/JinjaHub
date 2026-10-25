@@ -83,3 +83,25 @@ export interface NavItem {
   label: string;
   to: string;
 }
+
+export type MomentCategory = 'classes' | 'field' | 'people' | 'celebrations';
+
+export interface HubMoment {
+  id: string;
+  src: string;
+  alt: string;
+  caption: string;
+  place: string;
+  category: MomentCategory;
+  likes: number;
+  /** Crop shape used by the gallery masonry cards. */
+  ratio?: 'wide' | 'square' | 'tall';
+}
+
+export interface DayAtHub {
+  id: string;
+  time: string;
+  title: string;
+  body: string;
+  icon: LucideIcon;
+}

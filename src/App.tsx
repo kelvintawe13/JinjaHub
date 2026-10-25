@@ -6,6 +6,7 @@ import { RequireAuth } from './components/layout/RequireAuth';
 import { Landing } from './pages/Landing';
 import { Courses } from './pages/Courses';
 import { CourseDetail } from './pages/CourseDetail';
+import { HubLife } from './pages/HubLife';
 import { HowItWorks } from './pages/HowItWorks';
 import { Jobs } from './pages/Jobs';
 import { About } from './pages/About';
@@ -36,6 +37,7 @@ export function App({ courseShowcase = 'rows' }: AppProps) {
             <Route path="/" element={<Landing courseShowcase={courseShowcase} />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/courses/:course" element={<CourseDetail />} />
+            <Route path="/life" element={<HubLife />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/about" element={<About />} />
