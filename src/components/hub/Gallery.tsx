@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import {
@@ -50,18 +50,31 @@ export function Gallery({ onNotify }: {onNotify: (message: string) => void;}) {
     });
   }
 
-  function openMoment(id: string) {
-    const next = new URLSearchParams(params);
-    next.set('moment', id);
-    setParams(next, { replace: true });
-  }
+  const openMoment = useCallback(
+    (id: string) => {
+      setParams(
+        (current) => {
+          const next = new URLSearchParams(current);
+          next.set('moment', id);
+          return next;
+        },
+        { replace: true }
+      );
+    },
+    [setParams]
+  );
 
-  function closeLightbox() {
-    const next = new URLSearchParams(params);
-    next.delete('moment');
-    setParams(next, { replace: true });
+  const closeLightbox = useCallback(() => {
     setStartingSlideshow(false);
-  }
+    setParams(
+      (current) => {
+        const next = new URLSearchParams(current);
+        next.delete('moment');
+        return next;
+      },
+      { replace: true }
+    );
+  }, [setParams]);
 
   function startSlideshow() {
     setStartingSlideshow(true);
