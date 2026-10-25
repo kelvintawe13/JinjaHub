@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { AlertCircleIcon, CheckCircle2Icon, ClockIcon, MailIcon, MapPinIcon, PhoneIcon } from 'lucide-react';
+import {
+  AlertCircleIcon,
+  CheckCircle2Icon,
+  ClockIcon,
+  MailIcon,
+  MapPinIcon,
+  PhoneIcon,
+  SendIcon } from
+'lucide-react';
 import { FormField } from '../components/ui/FormField';
 import { SelectField } from '../components/ui/SelectField';
 import { Button } from '../components/ui/Button';
 import { Alert } from '../components/ui/Alert';
+import { Chip } from '../components/ui/Chip';
 import { useFormFields } from '../hooks/useFormFields';
 import { contact } from '../data/navigation';
 import { apiSendMessage } from '../utils/mockContact';
@@ -52,51 +61,74 @@ export function Contact() {
   const { error: messageError, ...messageProps } = form.bind('message');
 
   return (
-    <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
-      <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr]">
+    <div className="mx-auto max-w-page px-4 pb-14 pt-6 md:px-6 md:pb-16 md:pt-8">
+      <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-12">
         <div>
-          <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">Talk to us</h1>
-          <p className="mt-3 text-base leading-relaxed text-muted">Call, visit, or send a message. We reply within 2 working days.</p>
-          <div className="mt-8 overflow-hidden rounded-3xl ring-1 ring-line">
-            <img src="/contact.svg" alt="" className="aspect-[4/3] w-full object-cover" />
+          <Chip tone="forest" className="px-3 py-1">
+            Contact
+          </Chip>
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">Talk to us</h1>
+          <p className="mt-3 max-w-md text-base leading-relaxed text-muted">
+            Call, visit, or send a message. A real person reads every one, and we reply within 2 working
+            days.
+          </p>
+
+          <div className="relative mt-6 overflow-hidden rounded-2xl bg-cream ring-1 ring-gold/50">
+            <img
+              src="/contact.svg"
+              alt=""
+              className="h-36 w-full object-cover object-[50%_45%] sm:h-40" />
+            
+            <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-paper/95 px-3 py-1.5 text-xs font-semibold shadow-sm ring-1 ring-line backdrop-blur">
+              <ClockIcon className="h-3.5 w-3.5 text-forest" aria-hidden="true" />
+              Replies within 2 working days
+            </span>
           </div>
-          <ul className="mt-10 space-y-6">
-            <li className="flex gap-4">
-              <PhoneIcon className="mt-1 h-5 w-5 text-forest" aria-hidden="true" />
-              <div>
-                <p className="text-sm text-muted">Phone or WhatsApp</p>
-                <a href={`tel:${contact.phone.replace(/\s/g, '')}`} className="text-lg font-semibold hover:underline">
-                  {contact.phone}
-                </a>
-              </div>
-            </li>
-            <li className="flex gap-4">
-              <MailIcon className="mt-1 h-5 w-5 text-forest" aria-hidden="true" />
-              <div>
-                <p className="text-sm text-muted">Email</p>
-                <a href={`mailto:${contact.email}`} className="text-lg font-semibold hover:underline">
-                  {contact.email}
-                </a>
-              </div>
-            </li>
-            <li className="flex gap-4">
-              <MapPinIcon className="mt-1 h-5 w-5 text-forest" aria-hidden="true" />
-              <div>
-                <p className="text-sm text-muted">Visit</p>
-                <p className="text-lg font-semibold">{contact.address}</p>
-              </div>
-            </li>
-            <li className="flex gap-4">
-              <ClockIcon className="mt-1 h-5 w-5 text-forest" aria-hidden="true" />
-              <div>
-                <p className="text-sm text-muted">Hours</p>
-                <p className="text-lg font-semibold">{contact.hours}</p>
-              </div>
-            </li>
-          </ul>
+
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">
+            <a
+              href={`tel:${contact.phone.replace(/\s/g, '')}`}
+              className="group flex flex-col rounded-2xl bg-forest-soft p-4 transition-[box-shadow,transform] duration-200 ease-snappy hover:-translate-y-0.5 hover:shadow-[0_14px_30px_-16px_rgba(27,27,25,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest">
+              
+              <span className="grid h-9 w-9 place-items-center rounded-xl bg-forest text-ink">
+                <PhoneIcon className="h-4 w-4" aria-hidden="true" />
+              </span>
+              <span className="mt-3 text-xs font-semibold uppercase tracking-[0.12em] text-forest-dark">
+                Phone or WhatsApp
+              </span>
+              <span className="mt-1 font-semibold">{contact.phone}</span>
+            </a>
+
+            <a
+              href={`mailto:${contact.email}`}
+              className="group flex flex-col rounded-2xl bg-cream p-4 ring-1 ring-gold/50 transition-[box-shadow,transform] duration-200 ease-snappy hover:-translate-y-0.5 hover:shadow-[0_14px_30px_-16px_rgba(27,27,25,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest">
+              
+              <span className="grid h-9 w-9 place-items-center rounded-xl bg-paper text-forest-dark">
+                <MailIcon className="h-4 w-4" aria-hidden="true" />
+              </span>
+              <span className="mt-3 text-xs font-semibold uppercase tracking-[0.12em] text-forest-dark">
+                Email
+              </span>
+              <span className="mt-1 break-all font-semibold">{contact.email}</span>
+            </a>
+          </div>
+
+          <div className="mt-3 flex gap-3 rounded-2xl bg-paper p-4 ring-1 ring-line sm:p-5">
+            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-forest-soft">
+              <MapPinIcon className="h-4 w-4 text-forest-dark" aria-hidden="true" />
+            </span>
+            <div className="min-w-0">
+              <p className="text-xs font-semibold uppercase tracking-[0.12em] text-muted">Visit the hub</p>
+              <p className="mt-1 font-semibold leading-snug">{contact.address}</p>
+              <p className="mt-1.5 flex items-start gap-1.5 text-sm leading-snug text-muted">
+                <ClockIcon className="mt-0.5 h-3.5 w-3.5 shrink-0 text-forest" aria-hidden="true" />
+                {contact.hours}
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="rounded-3xl bg-paper p-6 ring-1 ring-line md:p-10">
+        <div className="rounded-3xl bg-paper p-5 ring-1 ring-line sm:p-6 md:p-8">
           {status === 'sent' ?
           <div className="flex flex-col items-start py-6" role="status">
               <CheckCircle2Icon className="h-10 w-10 text-forest" aria-hidden="true" />
@@ -106,14 +138,27 @@ export function Contact() {
               </p>
             </div> :
 
-          <form noValidate onSubmit={handleSubmit} className="space-y-7">
-              <h2 className="text-2xl font-semibold">Send a message</h2>
+          <form noValidate onSubmit={handleSubmit} className="space-y-5">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h2 className="text-2xl font-semibold">Send a message</h2>
+                  <p className="mt-1 text-sm leading-relaxed text-muted">
+                    One short form, and the right person gets back to you.
+                  </p>
+                </div>
+                <span
+                className="hidden h-10 w-10 shrink-0 place-items-center rounded-xl bg-forest-soft sm:grid"
+                aria-hidden="true">
+                
+                  <SendIcon className="h-4 w-4 text-forest-dark" />
+                </span>
+              </div>
               {networkError &&
             <Alert tone="error" title="Not sent">
                   {networkError}
                 </Alert>
             }
-              <div className="grid gap-7 sm:grid-cols-2">
+              <div className="grid gap-5 sm:grid-cols-2">
                 <FormField label="Your name" autoComplete="name" {...form.bind('name')} />
                 <FormField label="Phone or email for our reply" placeholder="0772 123 456" autoComplete="tel" {...form.bind('reply')} />
               </div>
@@ -124,7 +169,7 @@ export function Contact() {
                 </label>
                 <textarea
                 {...messageProps}
-                rows={5}
+                rows={4}
                 aria-invalid={messageError ? true : undefined}
                 aria-describedby={messageError ? 'message-error' : undefined}
                 className={cn(
@@ -139,9 +184,12 @@ export function Contact() {
                   </p>
               }
               </div>
-              <Button type="submit" size="lg" glow loading={status === 'sending'} loadingText="Sending…">
-                Send message
-              </Button>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <Button type="submit" size="lg" glow loading={status === 'sending'} loadingText="Sending…">
+                  Send message
+                </Button>
+                <p className="text-sm text-muted">No account needed.</p>
+              </div>
             </form>
           }
         </div>
