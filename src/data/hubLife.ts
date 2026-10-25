@@ -29,3 +29,8 @@ export const saturdayActivities = [
 'Board games',
 'Music and dance'];
 
+
+export const saturdayDetails = [
+'Open to every course and every learner',
+'No equipment needed — come in clothes you can move in',
+'Free, with no sign-up'];

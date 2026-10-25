@@ -1,7 +1,7 @@
-import { CalendarDaysIcon, TrophyIcon } from 'lucide-react';
+import { CalendarDaysIcon, CheckIcon } from 'lucide-react';
 import { Chip } from '../ui/Chip';
 import { SectionHeading } from '../ui/SectionHeading';
-import { hubPerks, saturdayActivities } from '../../data/hubLife';
+import { hubPerks, saturdayActivities, saturdayDetails } from '../../data/hubLife';
 
 export function HubLifeSection() {
   return (
@@ -9,63 +9,80 @@ export function HubLifeSection() {
       <SectionHeading
         id="hub-life-title"
         title="Life at the hub"
-        intro="Learning is only part of the day. The hub makes sure you are fed, equipped and part of a team." />
+        intro="Learning is only part of the day. We make sure you are fed, equipped and part of a team."
+        badge={<Chip tone="forest" className="px-3 py-1">Inside the hub</Chip>} />
       
 
-      <div className="mt-8 grid gap-4 lg:grid-cols-2">
-        <article className="rounded-3xl bg-cream p-6 ring-1 ring-gold/50 md:p-8">
-          <Chip tone="forest" className="px-3 py-1">
-            On every class day
-          </Chip>
-          <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-            Lunch and devices are on us
-          </h3>
-          <p className="mt-2 text-base leading-relaxed text-muted">
-            Come to the hub and we take care of the rest. You do not need to bring a laptop,
-            a tablet or food.
-          </p>
-          <ul className="mt-6 space-y-4">
-            {hubPerks.map(({ id, title, body, icon: Icon }) =>
-            <li key={id} className="flex gap-3">
-                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-forest text-ink">
-                  <Icon className="h-[18px] w-[18px]" aria-hidden="true" />
-                </span>
-                <div>
-                  <p className="font-semibold">{title}</p>
-                  <p className="mt-0.5 text-sm leading-relaxed text-muted">{body}</p>
-                </div>
-              </li>
-            )}
-          </ul>
-        </article>
-
-        <article className="flex flex-col rounded-3xl bg-leaf-soft p-6 md:p-8">
-          <p className="inline-flex items-center gap-1.5 self-start rounded-full bg-paper px-3 py-1 text-xs font-semibold text-leaf-dark">
-            <CalendarDaysIcon className="h-4 w-4" aria-hidden="true" />
-            Every Saturday
-          </p>
-          <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-            Sports and recreation
-          </h3>
-          <p className="mt-2 text-base leading-relaxed text-muted">
-            Saturdays are for play. Learners from every course come together for sports and
-            recreational activities, then go back to class refreshed the next week.
-          </p>
-          <ul className="mt-6 flex flex-wrap gap-2">
-            {saturdayActivities.map((activity) =>
-            <li key={activity}>
-                <Chip tone="neutral" className="bg-paper">
-                  {activity}
-                </Chip>
-              </li>
-            )}
-          </ul>
-          <p className="mt-auto flex items-start gap-2 border-t border-leaf/15 pt-5 text-sm leading-relaxed text-ink/80">
-            <TrophyIcon className="mt-0.5 h-4 w-4 shrink-0 text-leaf-dark" aria-hidden="true" />
-            Free and open to every learner at the hub. Just come in clothes you can move in.
-          </p>
-        </article>
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {hubPerks.map(({ id, title, body, icon: Icon }, index) =>
+        <article
+          key={id}
+          className="flex flex-col rounded-3xl bg-paper p-6 ring-1 ring-line md:p-7">
+          
+            <div className="flex items-start justify-between gap-4">
+              <span className="grid h-11 w-11 place-items-center rounded-2xl bg-forest-soft text-forest-dark">
+                <Icon className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <span className="text-xs font-semibold tabular-nums tracking-[0.14em] text-ink/30">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+            </div>
+            <h3 className="mt-5 text-lg font-semibold tracking-tight">{title}</h3>
+            <p className="mt-1.5 text-sm leading-relaxed text-muted">{body}</p>
+          </article>
+        )}
       </div>
+
+      <article className="relative mt-4 overflow-hidden rounded-3xl bg-leaf text-cream">
+        <span
+          className="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full border border-cream/15"
+          aria-hidden="true" />
+        
+        <span
+          className="pointer-events-none absolute -bottom-24 right-32 h-72 w-72 rounded-full border border-cream/10"
+          aria-hidden="true" />
+        
+
+        <div className="relative grid gap-8 p-6 md:p-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-12">
+          <div>
+            <p className="inline-flex items-center gap-1.5 rounded-full border border-cream/25 bg-cream/10 px-3 py-1 text-xs font-semibold text-cream">
+              <CalendarDaysIcon className="h-4 w-4" aria-hidden="true" />
+              Every Saturday
+            </p>
+            <h3 className="mt-4 text-2xl font-semibold tracking-tight md:text-3xl">
+              Sports and recreation
+            </h3>
+            <p className="mt-3 max-w-xl text-base leading-relaxed text-cream/85">
+              Saturdays are for play. Learners from every course come together for sports and
+              recreational activities, then go back to class refreshed the next week.
+            </p>
+            <ul aria-label="Saturday activities" className="mt-6 flex flex-wrap gap-2">
+              {saturdayActivities.map((activity) =>
+              <li
+                key={activity}
+                className="rounded-full border border-cream/25 bg-cream/10 px-3 py-1.5 text-xs font-semibold text-cream">
+                
+                  {activity}
+                </li>
+              )}
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border border-cream/20 bg-leaf-dark/40 p-5 md:p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cream/80">
+              Good to know
+            </p>
+            <ul className="mt-4 space-y-3.5">
+              {saturdayDetails.map((detail) =>
+              <li key={detail} className="flex gap-3 text-sm leading-relaxed text-cream/90">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-peach" aria-hidden="true" />
+                  {detail}
+                </li>
+              )}
+            </ul>
+          </div>
+        </div>
+      </article>
     </section>);
 
 }
