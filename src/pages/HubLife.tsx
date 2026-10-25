@@ -29,7 +29,7 @@ export function HubLife() {
 
   return (
     <div className="mx-auto max-w-page px-4 pb-16 pt-6 md:px-6 md:pt-10">
-      <header className="grid gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
+      <header className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-12">
         <div>
           <Chip tone="forest" className="px-3 py-1">
             Inside the hub
@@ -66,7 +66,7 @@ export function HubLife() {
             <img
               src={HERO_IMAGE}
               alt="Two learners at the Edu-Hub, one holding a laptop and one holding a seedling"
-              className="aspect-[4/5] w-full object-cover" />
+              className="aspect-[4/5] w-full object-cover lg:aspect-[3/2]" />
             
           </div>
 

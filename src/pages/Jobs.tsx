@@ -12,7 +12,7 @@ const trackSteps = [
 export function Jobs() {
   return (
     <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
-      <header className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <header className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12">
         <div className="max-w-2xl">
           <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">Jobs and the start-up track</h1>
           <p className="mt-3 text-base leading-relaxed text-muted">
@@ -20,7 +20,7 @@ export function Jobs() {
           </p>
         </div>
         <div className="overflow-hidden rounded-3xl ring-1 ring-line">
-          <img src="/jobs.svg" alt="" className="aspect-[4/3] w-full object-cover" />
+          <img src="/jobs.svg" alt="" className="aspect-[4/3] w-full object-cover lg:aspect-[3/2]" />
         </div>
       </header>
 

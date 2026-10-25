@@ -86,7 +86,7 @@ export function CourseDetail() {
         </div>
 
         <div className="overflow-hidden rounded-3xl bg-paper ring-1 ring-line">
-          <img src={course.image} alt="" className="aspect-[4/3] h-full w-full object-cover" />
+          <img src={course.image} alt="" className="aspect-[4/3] h-full w-full object-cover lg:aspect-[3/2]" />
         </div>
       </header>
 

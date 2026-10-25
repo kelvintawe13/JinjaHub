@@ -17,7 +17,7 @@ const weekToWeek = [
 export function Mentors() {
   return (
     <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
-      <header className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <header className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12">
         <div className="max-w-2xl">
           <Chip tone="forest" className="px-3 py-1">
             Your person
@@ -31,7 +31,7 @@ export function Mentors() {
           </p>
         </div>
         <div className="overflow-hidden rounded-3xl ring-1 ring-line">
-          <img src="/mentor-call.svg" alt="" className="aspect-[4/3] w-full object-cover" />
+          <img src="/mentor-call.svg" alt="" className="aspect-[4/3] w-full object-cover lg:aspect-[3/2]" />
         </div>
       </header>
 

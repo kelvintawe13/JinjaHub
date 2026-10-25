@@ -18,7 +18,7 @@ const stats = [
 export function About() {
   return (
     <div className="mx-auto max-w-page px-4 py-8 md:px-6 md:py-12">
-      <header className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <header className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12">
         <div>
           <Chip tone="forest" className="px-3 py-1">
             Who we are
@@ -57,7 +57,7 @@ export function About() {
         </div>
 
         <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-          <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-paper ring-1 ring-line">
+          <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-paper ring-1 ring-line lg:aspect-[3/2]">
             <img src={LEARNERS_IMAGE} alt="Two young learners at the Edu-Hub, one with a laptop and one holding a seedling" className="h-full w-full object-cover" />
           </div>
 
@@ -71,7 +71,7 @@ export function About() {
             </div>
           </div>
 
-          <div className="absolute bottom-6 right-3 rounded-2xl bg-paper p-4 shadow-[0_12px_30px_-12px_rgba(27,27,25,0.3)] sm:right-5">
+          <div className="absolute bottom-4 right-3 rounded-2xl bg-paper p-4 shadow-[0_12px_30px_-12px_rgba(27,27,25,0.3)] sm:right-5">
             <p className="text-3xl font-semibold tracking-tight text-forest-dark">70%</p>
             <p className="mt-0.5 max-w-[180px] text-xs leading-snug text-muted">
               of students we aim to see in work and livelihoods

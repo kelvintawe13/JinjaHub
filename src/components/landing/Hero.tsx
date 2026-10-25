@@ -16,7 +16,7 @@ export function Hero() {
 
   return (
     <section aria-labelledby="hero-title" className="overflow-hidden">
-      <div className="mx-auto grid max-w-page items-center gap-10 px-4 pb-8 pt-6 md:px-6 md:pt-10 lg:pb-12 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="mx-auto grid max-w-page items-center gap-8 px-4 pb-8 pt-6 md:px-6 md:pt-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:pb-10">
         <div>
           <div className="flex flex-wrap gap-2">
             <Chip tone="forest" className="px-3 py-1">
@@ -43,7 +43,7 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-          <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-paper ring-1 ring-line">
+          <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-paper ring-1 ring-line lg:aspect-[3/2]">
             <img src={HERO_IMAGE} alt="Two young learners at the Edu-Hub, one with a laptop and one holding a seedling" className="h-full w-full object-cover" />
           </div>
 
@@ -62,7 +62,7 @@ export function Hero() {
 
           <motion.div
             {...float(0.2)}
-            className="absolute right-3 top-[44%] max-w-[230px] rounded-2xl bg-paper p-3.5 shadow-[0_12px_30px_-12px_rgba(27,27,25,0.3)] lg:-right-8">
+            className="absolute right-3 top-[42%] max-w-[230px] rounded-2xl bg-paper p-3.5 shadow-[0_12px_30px_-12px_rgba(27,27,25,0.3)] lg:-right-8">
             
             <div className="flex items-center gap-2 text-xs font-medium text-forest-dark">
               <MessageCircleIcon className="h-4 w-4" aria-hidden="true" />
